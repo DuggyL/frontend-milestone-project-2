@@ -1,108 +1,167 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Interactive Frontend Milestone Project 2 - Alzheimer Awareness Website</h1>
 
-Welcome USER_NAME,
+View live project here. [view](#)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Design Briefs
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This project design to raise alzheimer awareness, It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential visitor. 
 
-## Gitpod Reminders
+## Purpose & Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- Online CV (focal point)
+- Promote private chef service (secondary)
+- Showcase pictures of client’s previous works (portfolio) 
+- Testimonials
+- Increase social media presence
 
-`python3 -m http.server`
+##  Future Features
 
-A blue button should appear to click: _Make Public_,
+In the future, I would like to add the following features:-
 
-Another blue button should appear to click: _Open Browser_.
+- Ability for Visitor to book an appointment
+- Ability for Visitor sign up for newsletter
+- Link to Client's blogs page
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+-   ### First Time Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
+    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+    - As a First Time Visitor, I want to look for testimonials to see the feedback of the service Chef Dicson provided, how reliable and can he be trusted. I also want to locate their social media links to determine how trusted and known he is.
+    - As a Returning Visitor, I want to find information about private chef services
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   ### Returning and Frequent Visitor Goals
 
-To log into the Heroku toolbelt CLI:
+    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Colour
 
-------
+## Typography
 
-## Release History
+## Imagery
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Main Landing Page Layout
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Wireframes
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-   Homepage Wireframe [view](#)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   Responsive on all device sizes
+    -   Pictures box resize base on device sizes
+    -   Image appear or disappear base on device sizes. About me section, Chef Dicson profile picture disappear on small screen sizes allow more room for text paragraph.
+    -   Text paragraph expands or collapse base on device sizes - the **READ MORE** button added to allow the visitor to expand text on small devices. on large screen devices, text paragraphs display in full and the button is hidden.
+    -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
+    -   Navigation bar collapses into hamburger icon to declutter header.  
+    -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity. 
+-   On navigation bar, text will change colour if you hover above it. 
+-   Navigation bar fixed on top of the viewing devices. Navigation options are always available for the visitor.
+-   Direct social media links at the footer, allow visitors access to Chef Dicson social media pages easily. Click on the link will open a new tab, allowing the landing page remains open in another tab. 
+-   Contact Chef Dicson directly using Contact Us form. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# Technologies Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Languages Used
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+-   HTML5
+-   CSS3
+-   Javascript
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Frameworks, Libraries & Programs Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. [Bootstrap v5.1.3:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+ Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Google Fonts:](https://fonts.google.com/)
+Google fonts were used to import the Pacifico and Quicksand font family into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/) 
+Font Awesome was used on all pages throughout the website to add icons for aesthetic purposes.
+1. [Gitpod:](https://gitpod.io/)
+Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+GitHub is used to store the project's code after being pushed from Git.
+1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+Photoshop was used to resizing images and editing photos for the website.   
+1. [Balsamiq:](https://balsamiq.com/)
+Balsamiq was used to create the wireframes during the design process.
+1. [Firefox Develop Tools:](/cssgradient.io)
+Develop Tools used to maintenance the web page.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Testing User Stories from User Experience (UX) Section
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   #### First Time Visitor Goals
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+        - Upon entering the site, users are automatically greeted by the main image, which immediately draws Visitors eyes to the page
+        - Easily readable navigation bar allow Visitor to navigate up and down the page with ease. 
+        - Each section has been layout carefully to increase readability, easy for the eyes to follow.
 
-------
+    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
-## FAQ about the uptime script
+        - The site has been designed to be fluid to read. At the top of each page there is a fixed navigation bar, each link describes what section they will end up at clearly.
+        - At the footer of the page, Chef Dicson logo allows the user to transfer back to the top of the page.
+        - On the Contact Us footer, after a form response is submitted. It will not interfere with the Visitor page.
 
-**Why have you added this script?**
+    -  As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to determine how trusted and known he is.
+        - Once the new visitor has read the testimonials. It will give them the confidence to hire Chef Dicson.
+        - The user can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    -  As a First Time Visitor, I want to find information about private chef services
+        - The user can also scroll to the middle of the page below about me, or click on "Private Chef" at the navigation bar to send Visitor directly to the Private Chef section of the page. The visitor will greet by a carousel of delicious dishes, details explain the benefits of hiring a private chef and what to expect when you hire one.
+-   #### Returning and Frequent Visitor Goals
 
-**How will this affect me?**
+    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+        - The Visitor can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+        - The Visitor call use Contact Me form to directly contact Chef Dicson.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Further Testing
 
-**So….?**
+### Mobile / Tablet Devices:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Known Bugs
 
-**Can I opt out?**
+# Deployment
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### GitHub Pages
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The project was deployed to GitHub Pages using the following steps...
 
-**Anything more?**
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+2. At the top of the Repository locate the "Settings".
+3. Click on "Pages" will open "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. At the top near github header to locate the now published site [link](https://duggyl.github.io/chef-dicson-milestone-project-1/).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Forking the GitHub Repository
 
----
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-Happy coding!
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied.
+
+# Credits
+
+### Code
+
+### Media
+
+### Acknowledgements
