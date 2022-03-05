@@ -4,38 +4,42 @@ View live project here. [view](#)
 
 # Design Briefs
 
-This project design to raise alzheimer awareness, It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential visitor. 
+This frontend project is designed to raise Alzheimer's awareness in an interactive, easily digestible reading layout with a simple memory base game to keep visitors engage and emphasise the importance of brain exercises to improve short term memory. The website will not be comprehensive but present bitesize information to help visitors understand Alzheimer's. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for the potential visitors.
 
 ## Purpose & Goals
 
-- Online CV (focal point)
-- Promote private chef service (secondary)
-- Showcase pictures of client’s previous works (portfolio) 
-- Testimonials
-- Increase social media presence
+- Alzheimer awareness (Types of dementia, symptoms & diagnosis and treatments)
+- Preventive measure (Reduce the risk of Alzheimers and other dementias)
+- Memory base game (Match pairs game)
+- Link to UK base Alzheimer's Society website (Offer more comprehensive information regarding Alzheimer and donation)
+- Using Google Map API to inform visitors of nearby clinics & specialists in the area (Undecided on the feature as dementia diagnosis can go through local GP and NHS)
 
 ##  Future Features
 
 In the future, I would like to add the following features:-
 
-- Ability for Visitor to book an appointment
-- Ability for Visitor sign up for newsletter
-- Link to Client's blogs page
+- Option to play other memory-based games
+- Undecided on scorekeeping feature
+- The ability for visitors to sign up for newsletter
+- Direct donation feature (To Alzheimer's charities)
+
 
 ## User Experience (UX)
 
 -   ### First Time Visitor Goals
 
-    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
+    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about Alzheimer’s.
     - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-    - As a First Time Visitor, I want to look for testimonials to see the feedback of the service Chef Dicson provided, how reliable and can he be trusted. I also want to locate their social media links to determine how trusted and known he is.
-    - As a Returning Visitor, I want to find information about private chef services
+    - As a First Time Visitor, I want to play fun & engaging memory game. I want the game to be easy to navigate UI and maybe play a few more rounds.
+    - As a First Time Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
 
 -   ### Returning and Frequent Visitor Goals
 
-    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
+    - As a Returning Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
 
 # Design
+
+- Easy to navigate single-page website. Using buttons to interact with the webpage.
 
 ## Colour
 
@@ -50,18 +54,6 @@ In the future, I would like to add the following features:-
 -   Homepage Wireframe [view](#)
 
 ## Features
-
--   Responsive on all device sizes
-    -   Pictures box resize base on device sizes
-    -   Image appear or disappear base on device sizes. About me section, Chef Dicson profile picture disappear on small screen sizes allow more room for text paragraph.
-    -   Text paragraph expands or collapse base on device sizes - the **READ MORE** button added to allow the visitor to expand text on small devices. on large screen devices, text paragraphs display in full and the button is hidden.
-    -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
-    -   Navigation bar collapses into hamburger icon to declutter header.  
-    -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity. 
--   On navigation bar, text will change colour if you hover above it. 
--   Navigation bar fixed on top of the viewing devices. Navigation options are always available for the visitor.
--   Direct social media links at the footer, allow visitors access to Chef Dicson social media pages easily. Click on the link will open a new tab, allowing the landing page remains open in another tab. 
--   Contact Chef Dicson directly using Contact Us form. 
 
 # Technologies Used
 
@@ -96,31 +88,30 @@ Develop Tools used to maintenance the web page.
 
 -   #### First Time Visitor Goals
 
-    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
+    -  As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about Alzheimer’s.
 
         - Upon entering the site, users are automatically greeted by the main image, which immediately draws Visitors eyes to the page
-        - Easily readable navigation bar allow Visitor to navigate up and down the page with ease. 
+        - Easily readable navigation bar
         - Each section has been layout carefully to increase readability, easy for the eyes to follow.
 
-    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+    -  As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
         - The site has been designed to be fluid to read. At the top of each page there is a fixed navigation bar, each link describes what section they will end up at clearly.
-        - At the footer of the page, Chef Dicson logo allows the user to transfer back to the top of the page.
-        - On the Contact Us footer, after a form response is submitted. It will not interfere with the Visitor page.
 
-    -  As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to determine how trusted and known he is.
-        - Once the new visitor has read the testimonials. It will give them the confidence to hire Chef Dicson.
-        - The user can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
+    -  As a First Time Visitor, I want to play fun & engaging memory game. I want the game to be easy to navigate UI and maybe play a few more rounds.
 
-    -  As a First Time Visitor, I want to find information about private chef services
-        - The user can also scroll to the middle of the page below about me, or click on "Private Chef" at the navigation bar to send Visitor directly to the Private Chef section of the page. The visitor will greet by a carousel of delicious dishes, details explain the benefits of hiring a private chef and what to expect when you hire one.
+        - 
+        
+
+    -  As a First Time Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
+
+        -
+        
 -   #### Returning and Frequent Visitor Goals
 
-    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
+    -  As a Returning Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
 
-        - The Visitor can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
-
-        - The Visitor call use Contact Me form to directly contact Chef Dicson.
+        - 
 
 ### Further Testing
 
