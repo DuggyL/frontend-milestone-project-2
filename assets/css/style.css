@@ -1,0 +1,9 @@
+body {
+    font-weight: bold;
+}
+
+div {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
