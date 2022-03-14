@@ -1,19 +1,20 @@
 let iconsArray = [
-    {name: 'blender', img: 'assets/images/blender.png'},
-    {name: 'bowl', img: 'assets/images/bowl.png'},
-    {name: 'cooking-pot', img: 'assets/images/cooking-pot'},
-    {name: 'flask', img: 'assets/images/flask.png'},
-    {name: 'flower', img: 'assets/images/flower.png'},
-    {name: 'handbag', img: 'assets/images/handbag'},
-    {name: 'kettle', img: 'assets/images/kettle.png'},
-    {name: 'lamp', img: 'assets/images/lamp.png'},
-    {name: 'plant', img: 'assets/images/plant'},
-    {name: 'teacup', img: 'assets/images/teacup.png'},
-    {name: 'teapot', img: 'assets/images/teapot.png'},
-    {name: 'water-bottle', img: 'assets/images/water-bottle'},
-    {name: 'watering-pot', img: 'assets/images/watering-pot'},
-    {name: 'water-jug', img: 'assets/images/water-jug.png'},
-    {name: 'wine-bottle', img: 'assets/images/winebottle'},
+    {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
+    {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
+    {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot'},
+    {name: 'flask', img: 'assets/images/memory-game-icons/flask.png'},
+    {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+    {name: 'handbag', img: 'assets/images/memory-game-icons/handbag'},
+    {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+    {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+    {name: 'plant', img: 'assets/images/memory-game-icons/plant'},
+    {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
+    {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
+    {name: 'water-bottle', img: 'assets/images/memory-game-icons/water-bottle.png'},
+    {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+    {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+    {name: 'wine-bottle', img: 'assets/images/memory-game-icons/winebottle.png'},
+    {name: 'brain', img: 'assets/images/memory-game-icons/brain.png'},
 ]
 
 iconsArray.sort(() => 0.5 - Math.random())
@@ -31,7 +32,19 @@ let iconsChosen = []
 let iconsChosenId = []
 let iconsMatch = []
 
-// function createGame ()
+function createEasyGame() {
+    for (let i = 0; i < iconsArray.length; i++) {
+        let icons = document.createElement('img')
+
+        icons.setAttribute('src','assets/images/memory-game-icons/brain.png')
+        icons.setAttribute('data-id', i)
+        //icons.addEventListener('click')
+        gamespace.appendChild(icons)
+    }
+}
+
+createEasyGame()
+
 // function flipIcons ()
 
 // function clickCount ()
