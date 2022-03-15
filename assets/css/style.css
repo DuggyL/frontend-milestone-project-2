@@ -3,13 +3,13 @@ body {
     text-align: center;
 }
 
-#gamespace {
+#game-grid {
     width: 800px;
     height: auto;
     align-items: center;
 }
 
-#gamespace img {
+#game-grid img {
     width: 200px;
     height: 200px;
 }

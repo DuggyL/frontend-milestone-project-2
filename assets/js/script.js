@@ -1,86 +1,129 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let iconsArray = [
+    let levelOneArray = [
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-        {name: 'flask', img: 'assets/images/memory-game-icons/flask.png'},
+        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-        {name: 'flask', img: 'assets/images/memory-game-icons/flask.png'},
-
-        // {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
-        // {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-        // {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-        // {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-        // {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-        // {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
-        // {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
-        // {name: 'water-bottle', img: 'assets/images/memory-game-icons/water-bottle.png'},
-        // {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
-        // {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
-        // {name: 'wine-bottle', img: 'assets/images/memory-game-icons/wine-bottle.png'},
+        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
     ]
 
-    iconsArray.sort(() => 0.5 - Math.random())
+    // let levelTwoArray = [
+    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
+    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
+    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
+    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
+    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
+    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'}
+    // ]
 
-    const gameSpace = document.getElementById('gamespace')
-    const scoreBoard = document.getElementById('scoreboard')
+    // let levelThreeArray = [
+    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
+    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
+    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+    //     {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
+    //     {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
+    //     {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+    //     {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
+    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
+    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
+    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+    //     {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
+    //     {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
+    //     {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+    //     {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'}
+    // ]
+
+    levelOneArray.sort(() => 0.5 - Math.random())
+    // levelTwoArray.sort(() => 0.5 - Math.random())
+    // levelThreeArray.sort(() => 0.5 - Math.random())
+
+    console.log(levelOneArray)
+
+    const gameGrid = document.getElementById('game-grid')
+    const scoreDisplay = document.getElementById('score-display')
+    // const clickDisplay = document.getElementById('click-display')
    
     let iconsChosen = []
     let iconsChosenId = []
-    let iconsPair = []
+    let iconsMatch = []
 
-    function createGame() {
-        for (let i = 0; i < iconsArray.length; i++) {
-            let icons = document.createElement('img')
-            icons.setAttribute('src','assets/images/memory-game-icons/brain1.png')
-            icons.setAttribute('data-id', i)
-            icons.addEventListener('click', flipIcons)
-            gamespace.appendChild(icons)
+    function createLevelOneGame() {
+        for (let i = 0; i < levelOneArray.length; i++) {
+            const icon = document.createElement('img')
+            icon.setAttribute('src','assets/images/memory-game-icons/brain1.png')
+            icon.setAttribute('data-id', i)
+            icon.addEventListener('click', flipIcon)
+            gameGrid.appendChild(icon)
         }
     }
 
-    function flipIcons() {
-        let iconsId = this.dataset.id
-        iconsChosen.push(iconsArray[iconsId].name)
-        iconsChosenId.push(iconsId)
-        this.setAttribute('src', iconsArray[iconsId].img)
-        if (iconsChosen.length === 2) {
-            setTimeout(checkForPair, 500)
-        }
-    }
+    function checkMatch() {
+        const icons = document.querySelectorAll('img')
+        const firstIconId = iconsChosenId[0]
+        const secondIconId = iconsChosenId[1]
 
-    function checkForPair() {
-        const icons = document.getElementsByTagName('img')
-        let firstIconsId = iconsChosenId[0]
-        let secondIconsId = iconsChosenId[1]
+        console.log(iconsChosen, firstIconId, secondIconId)
 
-        if(firstIconsId === secondIconsId) {
-            icons[firstIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            icons[secondIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
+        if(firstIconId == secondIconId) {
+            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
+            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
             alert("You clicked on the same icon.")
         } else if (iconsChosenId[0] ===  iconsChosenId[1]) {
-            icons[firstIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
-            icons[firstIconsId].removeEventListener('click', flipcard)
-            icons[secondIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
-            icons[secondIconsId].removeEventListener('click', flipcard)
+            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
+            icons[firstIconId].removeEventListener('click', flipIcon)
+            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
+            icons[secondIconId].removeEventListener('click', flipIcon)
             iconsMatch.push(iconsChosen)
-            alert("You found a pair.")
+            alert("You found a match.")
         } else {
-            icons[firstIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            icons[secondIconsId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
+            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
+            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
             alert("Try again")
         }
         iconsChosen = []
         iconsChosenId = []
-        scoreBoard.textContent = iconsPair.length
-        if (iconsPair.length === iconsArray.length/2) {
+        scoreDisplay.textContent = iconsMatch.length
+        if (iconsMatch.length === levelOneArray.length/2) {
             scoreBoard.textContent = "You got them all!"
         }
     }
 
-    createGame()
+    function flipIcon() {
+        let iconId = this.getAttribute('data-id')
+        iconsChosen.push(levelOneArray[iconId].name)
+        iconsChosenId.push(iconId)
+        this.setAttribute('src', levelOneArray[iconId].img)
+        if (iconsChosen.length === 2) {
+            setTimeout(checkMatch, 700)
+        }
+    }
+
+    createLevelOneGame()
 
 })
+
+
