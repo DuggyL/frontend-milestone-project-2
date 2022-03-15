@@ -1,12 +1,12 @@
 body {
-    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 #gamespace {
     width: 800px;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
 }
 
 #gamespace img {
