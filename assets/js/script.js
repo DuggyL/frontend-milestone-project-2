@@ -1,62 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let levelOneArray = [
+    let iconsArray = [
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
         {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+        {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+        {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+        {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
+        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+        {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+        {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+        {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'}
     ]
-
-    // let levelTwoArray = [
-    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
-    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
-    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
-    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
-    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
-    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'}
-    // ]
-
-    // let levelThreeArray = [
-    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
-    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
-    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-    //     {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
-    //     {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
-    //     {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
-    //     {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
-    //     {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
-    //     {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-    //     {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-    //     {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'}
-    //     {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
-    //     {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-    //     {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-    //     {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-    //     {name: 'teacup', img: 'assets/images/memory-game-icons/teacup.png'},
-    //     {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
-    //     {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
-    //     {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'}
-    // ]
-
+    
     const gameGrid = document.getElementById('game-grid')
     const scoreDisplay = document.getElementById('score-display')
     const clicksDisplay = document.getElementById('clicks-display')
@@ -68,13 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let clicks = 0
 
     function shuffleIcons() {
-        levelOneArray.sort(() => 0.5 - Math.random())
-        // levelTwoArray.sort(() => 0.5 - Math.random())
-        // levelThreeArray.sort(() => 0.5 - Math.random())
+        iconsArray.sort(() => 0.5 - Math.random())
     }
 
-    function createLevelOneGame() {
-        for (let i = 0; i < levelOneArray.length; i++) {
+    function createGame() {
+        for (let i = 0; i < iconsArray.length; i++) {
             const icon = document.createElement('img')
             icon.setAttribute('src','assets/images/memory-game-icons/brain1.png')
             icon.setAttribute('data-id', i)
@@ -83,12 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function flipIcon() {
+        let iconId = this.getAttribute('data-id')
+        iconsChosen.push(iconsArray[iconId].name)
+        iconsChosenId.push(iconId)
+        this.setAttribute('src', iconsArray[iconId].img)
+        if (iconsChosen.length === 2) {
+            setTimeout(checkMatch, 700)
+        }
+    }
+
     function checkMatch() {
         const icons = document.querySelectorAll('img')
         const firstIconId = iconsChosenId[0]
         const secondIconId = iconsChosenId[1]
-
-        console.log(iconsChosen, firstIconId, secondIconId)
 
         if(iconsChosen[0] ===  iconsChosen[1]) {
             icons[firstIconId].removeEventListener('click', flipIcon)
@@ -109,34 +77,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function checkWon() {
-        if (iconsMatch == levelOneArray.length/2) {
+        if (iconsMatch == iconsArray.length/2) {
         alert("You won") 
         }
     }
 
-    function flipIcon() {
-        let iconId = this.getAttribute('data-id')
-        iconsChosen.push(levelOneArray[iconId].name)
-        iconsChosenId.push(iconId)
-        this.setAttribute('src', levelOneArray[iconId].img)
-        if (iconsChosen.length === 2) {
-            setTimeout(checkMatch, 700)
-        }
-    }
-
-    function replay() { 
+    function reset() { 
         shuffleIcons();
         gameGrid.innerHTML = "";
-        createLevelOneGame() 
+        createGame() 
         iconsMatch = 0;
         clicks = 0; 
-        clickDisplay.innerHTML = 0; 
+        clicksDisplay.innerHTML = 0; 
         scoreDisplay.innerHTML = 0;
     }
 
-    createLevelOneGame()
+    createGame()
     shuffleIcons()
-    playAgain.addEventListener("click", replay); 
+    playAgain.addEventListener("click", reset); 
 
 })
 
