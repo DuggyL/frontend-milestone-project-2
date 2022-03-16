@@ -57,19 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //     {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'}
     // ]
 
-    levelOneArray.sort(() => 0.5 - Math.random())
-    // levelTwoArray.sort(() => 0.5 - Math.random())
-    // levelThreeArray.sort(() => 0.5 - Math.random())
-
-    console.log(levelOneArray)
-
     const gameGrid = document.getElementById('game-grid')
     const scoreDisplay = document.getElementById('score-display')
-    // const clickDisplay = document.getElementById('click-display')
+    const clicksDisplay = document.getElementById('clicks-display')
+    const playAgain = document.getElementById('replay')
    
     let iconsChosen = []
     let iconsChosenId = []
-    let iconsMatch = []
+    let iconsMatch = 0
+    let clicks = 0
+
+    function shuffleIcons() {
+        levelOneArray.sort(() => 0.5 - Math.random())
+        // levelTwoArray.sort(() => 0.5 - Math.random())
+        // levelThreeArray.sort(() => 0.5 - Math.random())
+    }
 
     function createLevelOneGame() {
         for (let i = 0; i < levelOneArray.length; i++) {
@@ -88,16 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(iconsChosen, firstIconId, secondIconId)
 
-        if(firstIconId == secondIconId) {
-            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            alert("You clicked on the same icon.")
-        } else if (iconsChosenId[0] ===  iconsChosenId[1]) {
-            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
+        if(iconsChosen[0] ===  iconsChosen[1]) {
             icons[firstIconId].removeEventListener('click', flipIcon)
-            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain2.png')
             icons[secondIconId].removeEventListener('click', flipIcon)
-            iconsMatch.push(iconsChosen)
+            iconsMatch += 1
+            scoreDisplay.innerHTML = iconsMatch
+            setTimeout(checkWon, 700) 
             alert("You found a match.")
         } else {
             icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
@@ -106,9 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         iconsChosen = []
         iconsChosenId = []
-        scoreDisplay.textContent = iconsMatch.length
-        if (iconsMatch.length === levelOneArray.length/2) {
-            scoreBoard.textContent = "You got them all!"
+        clicks += 1
+        clicksDisplay.innerHTML = clicks
+    }
+    
+    function checkWon() {
+        if (iconsMatch == levelOneArray.length/2) {
+        alert("You won") 
         }
     }
 
@@ -122,7 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function replay() { 
+        shuffleIcons();
+        gameGrid.innerHTML = "";
+        createLevelOneGame() 
+        iconsMatch = 0;
+        clicks = 0; 
+        clickDisplay.innerHTML = 0; 
+        scoreDisplay.innerHTML = 0;
+    }
+
     createLevelOneGame()
+    shuffleIcons()
+    playAgain.addEventListener("click", replay); 
 
 })
 
