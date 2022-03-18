@@ -3,14 +3,60 @@ body {
     text-align: center;
 }
 
+.banner {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background: url('../images/brain.jpg') no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner h1 {
+    font-size: 75px;
+    color: white;
+    padding: 25px;
+}
+
+.about-alzheimer {
+    padding-left: 25px;
+    font-size: 100%;
+    font-weight: 500;
+    text-align: justify;
+}
+
+header {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
 #game-grid {
-    width: 800px; 
+    width: 640px;
+    height: 640px;
     display: flex; 
     flex-wrap: wrap; 
-    margin: 60px auto;
+    margin: 10px; 
 }
 
 #game-grid img {
-    width: 200px;
-    height: 200px;
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    object-fit: scale-down;
+    margin: 2px; 
+    -webkit-transition: -moz-transform .3s ease-out; 
+    -moz-transition: -webkit-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+     transition: transform .3s ease-out; 
 }
