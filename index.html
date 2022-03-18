@@ -12,60 +12,52 @@
 <body>
 
     <header class="banner container-fluid">
-        <div class="container logo">
-            <h1><img src="./assets/images/memory-game-icons/brain2.png" alt="brain-logo"> Alzheimer's Awareness</h1>
-        </div>
+        <h1 >World Alzheimer's Awareness</h1>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-md about-alzheimer">
-                    <h3>What is World Alzheimer's Awareness?</h3>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg about-alzheimer">
+                <h3>What is World Alzheimer's Awareness?</h3>
+                <p>
+                    World Alzheimer's Awareness is an international campaign to raise awareness and highlight issues faced by people affected by dementia. 
+                    World Alzheimer's Day takes place every September. 
+                    Globally, dementia is one of the biggest challenges we face, with nearly 50 million people living with dementia worldwide. 
+                    To tackle this global dementia challenge we need to work together, and to collaborate and share best practice with one another.
+                    This is why Alzheimer's Society has committed to work with partners on global research and campaigning.
+                </p>
+                <h3>Short-term Memory</h3>
+                <p>
+                    Short-term memory loss is when you forget things you heard, saw, or did recently. 
+                    It's a normal part of getting older for many people. 
+                    But it can also be a sign of a deeper problem, such as dementia, a brain injury, or a mental health issue.
+                    Playing memory games can improve other brain functions, such as attention, concentration, and focus. 
+                    Memory games give space to critical thinking and that helps children nurture their attention to detail. 
+                    Memory games can improve visual recognition.
+                </p>
+                <br>
+                <div class="lets-play">
+                    <h3>Let's Play Memory Game!</h3>
                     <p>
-                        World Alzheimer's Awareness is an international campaign to raise awareness and highlight issues faced by people affected by dementia. 
-                        World Alzheimer's Day takes place every September. 
-                        Globally, dementia is one of the biggest challenges we face, with nearly 50 million people living with dementia worldwide. 
-                        To tackle this global dementia challenge we need to work together, and to collaborate and share best practice with one another.
-                        This is why Alzheimer's Society has committed to work with partners on global research and campaigning.
+                        The objective of the game is to pairs in the same icon.
+                        You will flip over two icons, one icon at a time. If the icons are not the same, 
+                        they are flipped back over. If the icons flipped are the same, the pair is kept.
+                        Continue until all the icons have been paired.
+                        It is essential to pay attention and flex your brain muscles and remember where cards are located. Have fun!
                     </p>
-                    <h3>Short-term Memory</h3>
-                    <p>
-                        Short-term memory loss is when you forget things you heard, saw, or did recently. 
-                        It's a normal part of getting older for many people. 
-                        But it can also be a sign of a deeper problem, such as dementia, a brain injury, or a mental health issue.
-                        Playing memory games can improve other brain functions, such as attention, concentration, and focus. 
-                        Memory games give space to critical thinking and that helps children nurture their attention to detail. 
-                        Memory games can improve visual recognition.
-                    </p>
-                    <br>
-                    <div class="lets-play">
-                        <h3>Let's Play Memory Game!</h3>
-                        <p>
-                            The objective of the game is to pairs in the same icon.
-                            You will flip over two icons, one icon at a time. If the icons are not the same, 
-                            they are flipped back over. If the icons flipped are the same, the pair is kept.
-                            Continue until all the icons have been paired.
-                            It is essential to pay attention and flex your brain muscles and remember where cards are located. Have fun!
-                        </p>
-                    </div>
                 </div>
-                <div class="col-md">
-                    <div id="game-grid"></div>
-                        <div>
-                            <p>Score: <span id="score-display">0</span>Attempt: <span id="clicks-display">0</span></p>
-                            <button class="play-btn" id="levelOne">LEVEL 1</button>
-                            <button class="play-btn" id="LevelTwo">LEVEL 2</button>
-                            <button class="play-btn" id="LevelThree">LEVEL 3</button>
-                            <button class="play-btn" id="replay">REPLAY</button>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg">
+                <div id="game-grid"></div>
+                    <p>Score: <span id="score-display">0</span>Attempt: <span id="clicks-display">0</span></p>
+                    <button class="play-btn" id="levelOne">LEVEL 1</button>
+                    <button class="play-btn" id="LevelTwo">LEVEL 2</button>
+                    <button class="play-btn" id="LevelThree">LEVEL 3</button>
+                    <button class="play-btn" id="replay">REPLAY</button>
                 </div>
             </div>
         </div>
-
-    </main>
-
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

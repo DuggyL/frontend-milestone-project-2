@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
         {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
         {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+        
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
         {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
         {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
-        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'}
     ]
     
     const gameGrid = document.getElementById('game-grid')
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iconsChosenId.push(iconId)
         this.setAttribute('src', iconsArray[iconId].img)
         if (iconsChosen.length === 2) {
-            setTimeout(checkMatch, 700)
+            setTimeout(checkMatch, 1000)
         }
     }
 
@@ -62,12 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const firstIconId = iconsChosenId[0]
         const secondIconId = iconsChosenId[1]
 
-        if(iconsChosen[0] ===  iconsChosen[1]) {
+        if(iconsChosen[0] ===  iconsChosen[1] && firstIconId !== secondIconId) {
             icons[firstIconId].removeEventListener('click', flipIcon)
             icons[secondIconId].removeEventListener('click', flipIcon)
             iconsMatch += 1
             scoreDisplay.innerHTML = iconsMatch
-            setTimeout(checkWon, 700) 
+            setTimeout(checkWon, 1000) 
             alert("You found a match.")
         } else {
             icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')

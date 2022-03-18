@@ -10,6 +10,8 @@ h3 {
     font-family: Fredoka;
     font-weight: 500;
     text-align: left;
+    font-size: 50px;
+    line-height: 1.1;
 }
 
 .play-btn {
@@ -33,7 +35,7 @@ h3 {
 }
 
 .banner {
-    height: 25vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,17 +48,12 @@ h3 {
 .banner h1 {
     font-family: Fredoka;
     font-weight: 600;
-    font-size: 7vh;
+    font-size: 100px;
     text-align: center;
     line-height: 1;
     color: white;
     padding: 25px;
-    text-shadow: 0.3rem 0.3rem palevioletred;
-}
-
-.banner h1 img {
-    width: 15vh;
-    height: auto;
+    text-shadow: 4px 4px palevioletred;
 }
 
 .lets-play {
@@ -75,7 +72,7 @@ h3 {
 
 #game-grid {
     padding-top: 30px;
-    margin-right: -40px;
+    margin-right: -20px;
     width: auto;
     height: auto;
     display: flex; 
@@ -85,9 +82,10 @@ h3 {
 #game-grid img {
     width: calc(25% - 10px);
     height: auto;
+    margin: 2px;
 }
 
 #game-grid img:active {
-    transform: scale(0.2);
-    transition: transform .7s;
+    transform: scale(0.6);
+    transition: transform .5s;
 }
