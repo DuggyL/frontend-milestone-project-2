@@ -5,18 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
         {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-        {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+        {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
         {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
         {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
         {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+        {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
         {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
         {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-        {name: 'flower', img: 'assets/images/memory-game-icons/flower.png'},
+        {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
         {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
         {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'}
+        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+        {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
     ]
     
     const gameGrid = document.getElementById('game-grid')
@@ -94,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     createGame()
     shuffleIcons()
-    playAgain.addEventListener("click", reset); 
+    playAgain.addEventListener("click", reset);
 
 })
 

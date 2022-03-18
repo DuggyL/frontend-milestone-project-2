@@ -1,62 +1,70 @@
 body {
-    font-family: sans-serif;
+    font-family: Fredoka;
+    font-weight: 300;
     text-align: center;
+    font-size: 110%;
+}
+
+h3 {
+    color: palevioletred;
+    font-family: Fredoka;
+    font-weight: 500;
+    text-align: left;
 }
 
 .banner {
-    height: 20vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 
-    background: url('../images/brain.jpg') no-repeat center center fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../images/brain.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .banner h1 {
-    font-size: 75px;
+    font-family: Fredoka;
+    font-weight: 600;
+    font-size: 5vw;
     color: white;
     padding: 25px;
+    margin: 25px;
+}
+
+.lets-play {
+    border: 3px solid palevioletred;
+    margin: -20px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .about-alzheimer {
-    padding-left: 25px;
+    padding: 50px 25px 25px 25px;
     font-size: 100%;
-    font-weight: 500;
+    font-weight: 400;
     text-align: justify;
 }
 
-header {
-    font-family: sans-serif;
-    text-align: center;
-}
-
-footer {
-    font-family: sans-serif;
-    text-align: center;
-}
-
-
 #game-grid {
-    width: 640px;
-    height: 640px;
+    padding-top: 30px;
+    margin-left: 20px;
+    width: auto;
+    height: auto;
     display: flex; 
-    flex-wrap: wrap; 
-    margin: 10px; 
+    flex-wrap: wrap;
 }
 
 #game-grid img {
     width: calc(25% - 10px);
-    height: calc(25% - 10px);
-    object-fit: scale-down;
-    margin: 2px; 
-    -webkit-transition: -moz-transform .3s ease-out; 
-    -moz-transition: -webkit-transform .3s ease-out; 
-    -o-transition: -o-transform .3s ease-out; 
-     transition: transform .3s ease-out; 
+    height: auto;
+}
+
+#game-grid img:active {
+    transform: scale(0.2);
+    transition: transform .7s;
+  }
+  
+#game-grid img:hover {
+    background: url('../images/memory-game-icons/brain2.png') no-repeat;
 }
