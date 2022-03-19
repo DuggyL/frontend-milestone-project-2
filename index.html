@@ -10,13 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-
+    
     <header class="banner container-fluid">
-        <h1 >World Alzheimer's Awareness</h1>
+        <h1>World Alzheimer's Awareness</h1>
     </header>
 
     <div class="container">
         <div class="row justify-content-md-center">
+
+            <!-- About Alzheimer -->
             <div class="col-lg about-alzheimer">
                 <h3>What is World Alzheimer's Awareness?</h3>
                 <p>
@@ -47,15 +49,21 @@
                     </p>
                 </div>
             </div>
+            <!-- /.About Alzheimer -->
+
+            <!-- Memory Game -->
             <div class="col-lg">
                 <div id="game-grid"></div>
-                    <p>Score: <span id="score-display">0</span>Attempt: <span id="clicks-display">0</span></p>
-                    <button class="play-btn" id="levelOne">LEVEL 1</button>
-                    <button class="play-btn" id="LevelTwo">LEVEL 2</button>
-                    <button class="play-btn" id="LevelThree">LEVEL 3</button>
-                    <button class="play-btn" id="replay">REPLAY</button>
+                    <div class="score">SCORE: <span id="score-display">0</span></div>
+                    <div class="attempt">ATTEMPT: <span id="clicks-display">0</span></div>
+                    <!-- <button class="play-btn" id="level-one">LEVEL 1</button>
+                    <button class="play-btn" id="Level-two">LEVEL 2</button>
+                    <button class="play-btn" id="Level-three">LEVEL 3</button> -->
+                    <button class="play-btn" id="reset">REPLAY</button>
                 </div>
             </div>
+            <!-- /.Memory Game -->
+
         </div>
     </div>
 

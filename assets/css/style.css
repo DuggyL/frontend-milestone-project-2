@@ -14,6 +14,90 @@ h3 {
     line-height: 1.1;
 }
 
+/* Header */
+
+.banner {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background: url('../images/brain.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.banner h1 {
+    font-family: Fredoka;
+    font-weight: 600;
+    font-size: 6vh;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    padding: 25px;
+    text-shadow: -1.5px -1.5px 0 palevioletred, 1.5px -1.5px 0 palevioletred, -1.5px 1.5px 0 palevioletred, 1.5px 1.5px 0 palevioletred, 5px 5px 3px black;
+}
+
+/* About Alzheimer */
+
+.about-alzheimer {
+    padding: 30px 25px 25px 25px;
+    font-size: 100%;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.lets-play {
+    border: 4px solid palevioletred;
+    margin: -20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* Memory Game */
+
+#game-grid {
+    padding-top: 15px;
+    margin-right: -20px;
+    width: auto;
+    height: auto;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#game-grid img {
+    width: calc(25% - 10px);
+    height: auto;
+    margin: 2px;
+}
+
+#game-grid img:active {
+    transform: scale(0.6);
+    transition: transform .5s;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.attempt {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#score-display {
+    font-weight: 900;
+    color: palevioletred;
+}
+
+#clicks-display {
+    font-weight: 900;
+    color: palevioletred;
+}
+
+/* Button */
+
 .play-btn {
     background-color: palevioletred;
     border: none;
@@ -32,60 +116,4 @@ h3 {
     background-color: mediumslateblue;
     transform: scale(1.2);
     transition: transform .4s;
-}
-
-.banner {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    background: url('../images/brain.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-.banner h1 {
-    font-family: Fredoka;
-    font-weight: 600;
-    font-size: 100px;
-    text-align: center;
-    line-height: 1;
-    color: white;
-    padding: 25px;
-    text-shadow: 4px 4px palevioletred;
-}
-
-.lets-play {
-    border: 4px solid palevioletred;
-    margin: -20px;
-    padding: 15px;
-    border-radius: 20px;
-}
-
-.about-alzheimer {
-    padding: 50px 25px 25px 25px;
-    font-size: 100%;
-    font-weight: 400;
-    text-align: justify;
-}
-
-#game-grid {
-    padding-top: 30px;
-    margin-right: -20px;
-    width: auto;
-    height: auto;
-    display: flex; 
-    flex-wrap: wrap;
-}
-
-#game-grid img {
-    width: calc(25% - 10px);
-    height: auto;
-    margin: 2px;
-}
-
-#game-grid img:active {
-    transform: scale(0.6);
-    transition: transform .5s;
 }
