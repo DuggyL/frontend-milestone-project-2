@@ -154,6 +154,11 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Code
 
+- This memory game based on multiple javascript tutorials. I studied tutorials extensively and breakdown all the components it needs to build a funtional javascript memory game.
+    - Create a memory game with JavaScript by Fakorede Damilola (https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
+    - Memory Game in Vanilla JavaScript by Marina Ferreira (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+    - Learn JavaScript by Building 7 Games - Full Course by Ania Kubów (https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
+
 ### Media
 
 ### Acknowledgements
