@@ -30,38 +30,38 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
         {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
         {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'}
-    ]
+    ];
     
     // Declared variables using const for values that will not change and var for the values that will change during the course of the game.
 
-    const gameGrid = document.getElementById('game-grid')
-    const scoreDisplay = document.getElementById('score-display')
-    const clicksDisplay = document.getElementById('clicks-display')
-    const playAgain = document.getElementById('reset')
+    const gameGrid = document.getElementById('game-grid');
+    const scoreDisplay = document.getElementById('score-display');
+    const clicksDisplay = document.getElementById('clicks-display');
+    const playAgain = document.getElementById('reset');
    
-    let iconsChosen = []
-    let iconsChosenId = []
-    let iconsMatch = 0
-    let clicks = 0
+    let iconsChosen = [];
+    let iconsChosenId = [];
+    let iconsMatch = 0;
+    let clicks = 0;
 
     // shuffleIcons function uses to randomise icons placement on the game grid by using sort and math.random method.
 
     function shuffleIcons() {
-        iconsArray.sort(() => 0.5 - Math.random())
+        iconsArray.sort(() => 0.5 - Math.random());
     }
 
-    // createGame function using "for" statment to create loop through iconsArray. And I use createElement method to create img element and setAttribute method to assign source of the images to the img element. (Default icon image of the brain mascot)
+    // createGame function using "for" statment to create loop through iconsArray. And use createElement method to create img element and setAttribute method to assign source of the images to the img element. (Default icon image of the brain mascot)
     // Assign a data ID attribute to each of the icons I created by using the "i" variable to loop through iconsArray.
     // Add eventListener to listen to player click. flipIcon function will activate when player click on the icons.
 
 
     function createGame() {
         for (let i = 0; i < iconsArray.length; i++) {
-            const icon = document.createElement('img')
-            icon.setAttribute('src','assets/images/memory-game-icons/brain1.png')
-            icon.setAttribute('data-id', i)
-            icon.addEventListener('click', flipIcon)
-            gameGrid.appendChild(icon)
+            const icon = document.createElement('img');
+            icon.setAttribute('src','assets/images/memory-game-icons/brain1.png');
+            icon.setAttribute('data-id', i);
+            icon.addEventListener('click', flipIcon);
+            gameGrid.appendChild(icon);
         }
     }
 
@@ -71,12 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // If iconsChosen array have 2 set of data (name i.e ["teapot", "kettle"]) it will set a timer (700 millisecond) using setTimeout method to activate checkMatch function.
 
     function flipIcon() {
-        let iconId = this.getAttribute('data-id')
-        iconsChosen.push(iconsArray[iconId].name)
-        iconsChosenId.push(iconId)
-        this.setAttribute('src', iconsArray[iconId].img)
+        let iconId = this.getAttribute('data-id');
+        iconsChosen.push(iconsArray[iconId].name);
+        iconsChosenId.push(iconId);
+        this.setAttribute('src', iconsArray[iconId].img);
         if (iconsChosen.length === 2) {
-            setTimeout(checkMatch, 700)
+            setTimeout(checkMatch, 700);
         }
     }
 
@@ -88,33 +88,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // After the if/else statement, iconsChosen and iconsChosenId arrays will clear. Number of clicks will be added to the clicks variable and displayed on "Attempt" on the game page.
 
     function checkMatch() {
-        const icons = document.querySelectorAll('img')
-        const firstIconId = iconsChosenId[0]
-        const secondIconId = iconsChosenId[1]
+        const icons = document.querySelectorAll('img');
+        const firstIconId = iconsChosenId[0];
+        const secondIconId = iconsChosenId[1];
 
         if(iconsChosen[0] === iconsChosen[1] && firstIconId !== secondIconId) {
-            icons[firstIconId].removeEventListener('click', flipIcon)
-            icons[secondIconId].removeEventListener('click', flipIcon)
-            iconsMatch += 1
-            scoreDisplay.innerHTML = iconsMatch
-            setTimeout(checkWon, 700) 
-            alert("You found a match.")
+            icons[firstIconId].removeEventListener('click', flipIcon);
+            icons[secondIconId].removeEventListener('click', flipIcon);
+            iconsMatch += 1;
+            scoreDisplay.innerHTML = iconsMatch;
+            setTimeout(checkWon, 700);
+            alert("You found a match.");
         } else {
-            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png')
-            alert("Try again")
+            icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png');
+            icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png');
+            alert("Try again");
         }
-        iconsChosen = []
-        iconsChosenId = []
-        clicks += 1
-        clicksDisplay.innerHTML = clicks
+        iconsChosen = [];
+        iconsChosenId = [];
+        clicks += 1;
+        clicksDisplay.innerHTML = clicks;
     }
     
     // The checkWon function simply check if the value of cardsWon is equal to the length of the card divided by 2 and alert player "You Won"
 
     function checkWon() {
         if (iconsMatch == iconsArray.length/2) {
-        alert("You won") 
+        alert("You won"); 
         }
     }
 
@@ -123,19 +123,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // iconsMatch and click reset back to 0. "Score" and "Attempt" also reset back to 0 on the main game page.
 
     function reset() { 
-        gameGrid.innerHTML = ""
+        gameGrid.innerHTML = "";
         shuffleIcons();
-        createGame() 
-        iconsMatch = 0
-        clicks = 0
-        clicksDisplay.innerHTML = 0
-        scoreDisplay.innerHTML = 0
+        createGame(); 
+        iconsMatch = 0;
+        clicks = 0;
+        clicksDisplay.innerHTML = 0;
+        scoreDisplay.innerHTML = 0;
     }
 
-    createGame()
-    shuffleIcons()
-    playAgain.addEventListener("click", reset)
+    createGame();
+    shuffleIcons();
+    playAgain.addEventListener("click", reset);
 
-})
+});
 
 

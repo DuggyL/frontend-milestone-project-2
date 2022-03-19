@@ -1,6 +1,6 @@
 <h1>Interactive Frontend Milestone Project 2 - Alzheimer Awareness Website</h1>
 
-View live project here. [view](#)
+View live project here. [view](https://duggyl.github.io/frontend-milestone-project-2/)
 
 # Design Briefs
 
@@ -51,7 +51,8 @@ In the future, I would like to add the following features:-
 
 ## Wireframes
 
--   Homepage Wireframe [view](#)
+-   Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
+-   Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
 ## Features
 
