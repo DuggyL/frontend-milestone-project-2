@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Declared variables using const for values that will not change and var for the values that will change during the course of the game.
 
     const gameGrid = document.getElementById('game-grid');
-    const scoreDisplay = document.getElementById('score-display');
-    const clicksDisplay = document.getElementById('clicks-display');
+    const matchDisplay = document.getElementById('match-display');
+    const attemptDisplay = document.getElementById('attempt-display');
     const playAgain = document.getElementById('reset');
    
     let iconsChosen = [];
     let iconsChosenId = [];
     let iconsMatch = 0;
-    let clicks = 0;
+    let attempt = 0;
 
     // shuffleIcons function uses to randomise icons placement on the game grid by using sort and math.random method.
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             icons[firstIconId].removeEventListener('click', flipIcon);
             icons[secondIconId].removeEventListener('click', flipIcon);
             iconsMatch += 1;
-            scoreDisplay.innerHTML = iconsMatch;
+            matchDisplay.innerHTML = iconsMatch;
             setTimeout(checkWon, 700);
             alert("You found a match.");
         } else {
@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         iconsChosen = [];
         iconsChosenId = [];
-        clicks += 1;
-        clicksDisplay.innerHTML = clicks;
+        attempt += 1;
+        attemptDisplay.innerHTML = attempt;
     }
     
     // The checkWon function simply check if the value of cardsWon is equal to the length of the card divided by 2 and alert player "You Won"
@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffleIcons();
         createGame(); 
         iconsMatch = 0;
-        clicks = 0;
-        clicksDisplay.innerHTML = 0;
-        scoreDisplay.innerHTML = 0;
+        attempt = 0;
+        attemptDisplay.innerHTML = 0;
+        matchDisplay.innerHTML = 0;
     }
 
     createGame();

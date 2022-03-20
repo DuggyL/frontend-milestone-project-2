@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
+/* Global Styles */
+
 body {
     font-family: Fredoka;
     font-weight: 300;
     text-align: center;
-    font-size: 110%;
+    font-size: 18px;
 }
 
 h1 {
@@ -27,15 +29,26 @@ h3 {
     line-height: 1;
 }
 
-/* Header */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: palevioletred;
+    font-weight: 500;
+}
+
+a:hover {
+    color: mediumslateblue;
+    font-weight: 700;
+}
+
+/* banner */
 
 .pink-banner {
     background-color: palevioletred;
     height: 10vh;
 }
 
-
-.banner {
+.brain-banner {
     height: 30vh;
     display: flex;
     align-items: center;
@@ -46,74 +59,55 @@ h3 {
     background-size: cover;
 }
 
-.banner h1 {
-    font-family: Fredoka;
-    font-weight: 600;
-    font-size: 6vh;
-    text-align: center;
-    line-height: 1;
-    color: white;
-    padding: 25px;
-    text-shadow: -1.5px -1.5px 0 palevioletred, 1.5px -1.5px 0 palevioletred, -1.5px 1.5px 0 palevioletred, 1.5px 1.5px 0 palevioletred, 5px 5px 3px black;
+/* Let's Play */
+
+.lets-play {
+    border: 4px solid palevioletred;
+    margin: 30px -15px -15px -15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-align: justify;
 }
 
 /* About Alzheimer */
 
 .about-alzheimer {
-    padding: 30px 25px 25px 25px;
-    font-size: 100%;
-    font-weight: 400;
-    text-align: justify;
-}
-
-.lets-play {
-    border: 4px solid palevioletred;
-    margin: 30px -15px -15px -15px;
-    padding: 22px;
-    border-radius: 20px;
-    font-size: 100%;
+    padding: 30px;
     font-weight: 400;
     text-align: justify;
 }
 
 /* Memory Game */
 
-#game-grid {
+.game-grid {
     padding-top: 15px;
     margin-right: -20px;
     width: auto;
     height: auto;
     display: flex; 
     flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-#game-grid img {
+.game-grid img {
     width: calc(25% - 10px);
     height: auto;
     margin: 2px;
 }
 
-#game-grid img:active {
+.game-grid img:active {
     transform: scale(0.6);
     transition: transform .3s;
 }
 
-.score {
+.counter {
     font-size: 20px;
     font-weight: 500;
 }
 
-.attempt {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-#score-display {
-    font-weight: 900;
-    color: palevioletred;
-}
-
-#clicks-display {
+.display {
     font-weight: 900;
     color: palevioletred;
 }
@@ -126,16 +120,15 @@ h3 {
     border-radius: 50px;
     color: white;
     padding: 10px 25px;
-    margin: 15px 15px 50px 15px;
+    margin: 15px 15px 30px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     font-weight: 500;
 }
 
 .play-btn:hover {
     background-color: mediumslateblue;
-    transform: scale(1);
+    transform: scale(1.2);
     transition: transform .4s;
 }
