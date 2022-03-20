@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < iconsArray.length; i++) {
             const icon = document.createElement('img');
             icon.setAttribute('src','assets/images/memory-game-icons/brain1.png');
+            icon.setAttribute('alt','memory-game-icons');
             icon.setAttribute('data-id', i);
             icon.addEventListener('click', flipIcon);
             gameGrid.appendChild(icon);
