@@ -44,12 +44,33 @@ In the future, I would like to add the following features:-
 - Easy to navigate single-page website. Using buttons to interact with the webpage.
 
 ## Colour
+ -   The two main primary colours used are pink dark pink 
+ -   Supported by 
+
+<h2 align="center"><img src=assets/images/colour.jpg></h2>
+
+According to the psychology of colour, green represent balance and harmony and a darker shade of green symbolise ambition and wealth.  A gradient of both colours creates the perfect representation of the business brand. The orange colour creates a great contrast with the green background, increasing the readability and image of the chef working in the hot kitchen.
 
 ## Typography
+-   Pacifico
+
+Pacifico will be used exclusively on the Chef Dicson logo. The reason I chose Pacifico is the simplicity and fluidity of the script typeface. It conveys the feelings of being fun, easy-going, and hassle-free. 
+
+-   Quicksand (Included all font weight)
+    
+And it accompanies by Quicksand font, a round sans-serif typeface that conveys a sense of friendliness and reliability. It also has great readability. 
 
 ## Imagery
+-   Imagery is important. The large, main image is designed to be striking and catch the user's attention. 
+-   The pictures showcase chef ability and skills.
 
 ## Main Landing Page Layout
+-   Header - Logo and navigation bar accompanied by main eye catching images.
+-   Main content - CV, career timeline, 
+-   Private chef services
+-   Carousel of culinary invention
+-   Testimonials
+-   Footer - Contact details, social media links, contact form
 
 ## Wireframes
 
@@ -57,6 +78,18 @@ In the future, I would like to add the following features:-
 -   Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
 ## Features
+-   Responsive on all device sizes
+    -   Pictures box resize base on device sizes
+    -   Image appear or disappear base on device sizes. About me section, Chef Dicson profile picture disappear on small screen sizes allow more room for text paragraph.
+    -   Text paragraph expands or collapse base on device sizes - the **READ MORE** button added to allow the visitor to expand text on small devices. on large screen devices, text paragraphs display in full and the button is hidden.
+    -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
+    -   Navigation bar collapses into hamburger icon to declutter header.  
+    -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity. 
+-   On navigation bar, text will change colour if you hover above it. 
+-   Navigation bar fixed on top of the viewing devices. Navigation options are always available for the visitor.
+-   Direct social media links at the footer, allow visitors access to Chef Dicson social media pages easily. Click on the link will open a new tab, allowing the landing page remains open in another tab. 
+-   Contact Chef Dicson directly using Contact Us form. 
+
 
 # Technologies Used
 
@@ -117,8 +150,22 @@ Develop Tools used to maintenance the web page.
         - 
 
 ### Further Testing
+-   The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
+-   Testing was done to ensure that all pages were linking correctly.
+-   Friends were asked to review the site and report any bugs or user experience issues.
 
 ### Mobile / Tablet Devices:
+The website was tested for responsiveness using Google/Firefox Chrome Developer Tools.
+- Galaxy S10
+- Galaxy S20
+- Galaxy Note
+- iPhone X Pro/Max
+- iPhone 11 Pro/Max
+- iPhone 12 Mini/Pro/Max
+- iPhone 13 Mini/Pro/Max
+- iPad
+- iPad Pro
+- Kindle
 
 ### Known Bugs
 
@@ -160,10 +207,20 @@ By forking the GitHub Repository we make a copy of the original repository on ou
     - Create a memory game with JavaScript by Fakorede Damilola (https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
     - Memory Game in Vanilla JavaScript by Marina Ferreira (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
     - Learn JavaScript by Building 7 Games - Full Course by Ania Kubów (https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
+-   How to Overlay by w3school (https://www.w3schools.com/howto/howto_css_overlay.asp)
+-   Bootstrap Library used throughout the project mainly to make site responsive
+-   Nav bar, social media and work history codes inspired by Code Institute tutorials projects
+-   W3schools and MDN Webdocs helped me learn more about HTML/CSS and solves problems
+-   Stack Overflow helped with solution to webpage responsiveness 
 
-- How to Overlay
-    - w3school (https://www.w3schools.com/howto/howto_css_overlay.asp)
 
 ### Media
+-   All images on private chef and about me sections were provided by Chef Dicson
+-   Main image and testimonal banner were found on unsplash.com
+-   Pacifico and Quicksand fonts supplied by Google Fonts
+-   Social media icons by Fontawesome
+-   Images used in readme were screen shot from W3 Validators and Am I Responsive
 
 ### Acknowledgements
+-   My Mentor [Narender Singh](https://github.com/nar3nd3r) for helpful feedback regarding design, features and functionality. 
+-   Stack Overflow developers on questions forum who provided helpful tips and solutions.
