@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iconsChosenId.push(iconId);
         this.setAttribute('src', iconsArray[iconId].img);
         if (iconsChosen.length === 2) {
-            setTimeout(checkMatch, 700);
+            setTimeout(checkMatch, 200);
         }
     }
 
@@ -92,12 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
             icons[secondIconId].removeEventListener('click', flipIcon);
             iconsMatch += 1;
             matchDisplay.innerHTML = iconsMatch;
-            setTimeout(checkWon, 700);
-            alert("You found a match.");
+            setTimeout(checkWon, 600);
         } else {
             icons[firstIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png');
             icons[secondIconId].setAttribute('src', 'assets/images/memory-game-icons/brain1.png');
-            alert("Try again");
         }
         iconsChosen = [];
         iconsChosenId = [];
