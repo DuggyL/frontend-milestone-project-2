@@ -1,5 +1,7 @@
 <h1>Interactive Frontend Milestone Project 2 - Alzheimer Awareness Website</h1>
 
+<img src=assets/images/screenshots/responsive-page.png>
+
 View live project here. [view](https://duggyl.github.io/frontend-milestone-project-2/)
 
 # Design Briefs
