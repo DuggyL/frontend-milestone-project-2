@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     let iconsArray = [
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-        // {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-        // {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-        // {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
-        // {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-        // {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-        // {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-        // {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
-        // {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
+        {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+        {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
+        {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+        {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+        {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'},
         
         {name: 'blender', img: 'assets/images/memory-game-icons/blender.png'},
         {name: 'bowl', img: 'assets/images/memory-game-icons/bowl.png'},
-        // {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
-        // {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
-        // {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
-        // {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
-        // {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
-        // {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
-        // {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
-        // {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'}
+        {name: 'cooking-pot', img: 'assets/images/memory-game-icons/cooking-pot.png'},
+        {name: 'plant', img: 'assets/images/memory-game-icons/plant.png'},
+        {name: 'teapot', img: 'assets/images/memory-game-icons/teapot.png'},
+        {name: 'handbag', img: 'assets/images/memory-game-icons/handbag.png'},
+        {name: 'kettle', img: 'assets/images/memory-game-icons/kettle.png'},
+        {name: 'lamp', img: 'assets/images/memory-game-icons/lamp.png'},
+        {name: 'water-jug', img: 'assets/images/memory-game-icons/water-jug.png'},
+        {name: 'watering-pot', img: 'assets/images/memory-game-icons/watering-pot.png'}
     ];
     
     // Declared variables using const for values that will not change and var for the values that will change during the course of the game.
@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameGrid = document.getElementById('game-grid');
     const matchDisplay = document.getElementById('match-display');
     const attemptDisplay = document.getElementById('attempt-display');
-    const playAgain = document.getElementById('reset');
+    const playAgain = document.getElementById('replay');
     const winOverlay = document.getElementById('win');
+    const winOverlayClose = document.getElementById('reset');
    
     let iconsChosen = [];
     let iconsChosenId = [];
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iconsChosenId.push(iconId);
         this.setAttribute('src', iconsArray[iconId].img);
         if (iconsChosen.length === 2) {
-            setTimeout(checkMatch, 200);
+            setTimeout(checkMatch, 250);
         }
     }
 
@@ -113,12 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // reset function will activate both shuffleIcons and createGame functions.
+    // replay function will activate both shuffleIcons and createGame functions.
     // Previous game grid will be clear to stop the createGame function from creating a new game on top of the old one.
-    // iconsMatch and click reset back to 0. "Score" and "Attempt" also reset back to 0 on the main game page.
+    // iconsMatch and click replay back to 0. "Score" and "Attempt" also replay back to 0 on the main game page.
 
-    function reset() {
-        winOverlay.classList.remove('show');
+    function replay() {
         gameGrid.innerHTML = "";
         shuffleIcons();
         createGame(); 
@@ -128,8 +128,16 @@ document.addEventListener('DOMContentLoaded', () => {
         matchDisplay.innerHTML = 0;
     }
 
+    // reset function used to return the player from the overlay win screen back to the main page. It also calls a replay function to allow the player to play the game again.
+
+    function reset() {
+        winOverlay.classList.remove('show');
+        replay()
+    }
+
     createGame();
     shuffleIcons();
-    playAgain.addEventListener("click", reset);
+    playAgain.addEventListener("click", replay);
+    winOverlayClose.addEventListener("click", reset);
 
 });

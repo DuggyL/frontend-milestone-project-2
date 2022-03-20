@@ -6,7 +6,7 @@ body {
     font-family: Fredoka;
     font-weight: 300;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 h1 {
@@ -14,10 +14,12 @@ h1 {
     font-family: Fredoka;
     font-weight: 900;
     text-align: left;
-    font-size: 80px;
+    font-size: 4em;
     text-transform: uppercase;
     line-height: 0.9;
     padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px 10px 0px 10px;
 }
 
 h3 {
@@ -25,7 +27,7 @@ h3 {
     font-family: Fredoka;
     font-weight: 500;
     text-align: left;
-    font-size: 50px;
+    font-size: 2em;
     line-height: 1;
 }
 
@@ -45,7 +47,7 @@ a:hover {
 
 .pink-banner {
     background-color: palevioletred;
-    height: 10vh;
+    height: 8vh;
 }
 
 .brain-banner {
@@ -62,11 +64,10 @@ a:hover {
 
 .lets-play {
     border: 4px solid palevioletred;
-    margin: 30px -15px -15px -15px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 25px 10px 25px;
     border-radius: 20px;
     font-weight: 400;
-    text-align: justify;
+    text-align: left;
 }
 
 /* About Alzheimer */
@@ -74,7 +75,7 @@ a:hover {
 .about-alzheimer {
     padding: 30px;
     font-weight: 400;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Memory Game */
@@ -132,7 +133,7 @@ a:hover {
     transition: transform .4s;
 }
 
-/* Overlay */
+/* Win Overlay */
 
 .win-overlay {
     background-color: white;
@@ -153,7 +154,6 @@ a:hover {
 
 .win-overlay.show {
     display: flex;
-    animation: overlay-appear 750ms forwards;
 }
 
 .you-win {
