@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function reset() {
         winOverlay.classList.remove('show');
-        replay()
+        replay();
     }
 
     createGame();
