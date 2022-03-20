@@ -131,3 +131,39 @@ a:hover {
     transform: scale(1.2);
     transition: transform .4s;
 }
+
+/* Overlay */
+
+.win-overlay {
+    background-color: white;
+    color: palevioletred;
+    display: none;
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.win-overlay.show {
+    display: flex;
+    animation: overlay-appear 750ms forwards;
+}
+
+.you-win {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: mediumslateblue;
+}
+
+.happy-brain {
+    width: 300px; 
+    align-items: center;
+    justify-content: center;
+}
