@@ -34,10 +34,18 @@ In the future, I would like to add the following features:-
     - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
 
 # Design
-
-<img src=assets/images/colour.jpg>
+<img src=assets/images/screenshots/desktop-screenshot.png>
 - Fun, inviting webpage design
 - Easy to navigate single-page website. Using single mouse click and button to interact with the webpage.
+<img src=assets/images/screenshots/desktop-screenshot1.png>
+
+Responsive Tablet Layout [view](./assets/images/screenshots/tablet-screenshot.png)
+
+Responsive Mobile Layout [view](./assets/images/screenshots/mobile-screenshot.png)
+
+<img src=assets/images/screenshots/winoverlay-desktop.png>
+
+Mobile Win Overlay [view](./assets/images/screenshots/winoverlay-mobile.png)
 
 ## Colour
 The reason I chosen these 2 combinations colour for my project is that it synergise very well with the brain mascot(logo/icon).
