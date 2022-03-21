@@ -2,7 +2,7 @@
 
 <img src=assets/images/screenshots/responsive-page.png>
 
-View live project here. [view](https://duggyl.github.io/frontend-milestone-project-2/)
+View live project [here](https://duggyl.github.io/frontend-milestone-project-2/).
 
 # Design Briefs
 This frontend project is designed to raise Alzheimer's awareness in an interactive, easily digestible reading layout with a simple memory base game to keep visitors engage and emphasise the importance of brain exercises to improve short term memory. The website will not be comprehensive but present bitesize information to help visitors understand Alzheimer's. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for the potential visitors.
@@ -34,6 +34,19 @@ In the future, I would like to add the following features:-
     - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
 
 # Design
+
+## Main Landing Page Layout
+-   Memory game.
+-   How to play the game.
+-   The World Alzheimer's Day information.
+
+## Wireframes
+
+-   Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
+-   Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
+
+## Final Design
+
 - The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
 
 - The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. The icons shrink slightly in response to interaction, creating small feedback and satisfaction when interacting with it.
@@ -50,15 +63,20 @@ In the future, I would like to add the following features:-
 
 ## Responsive Design
 - Responsive on all device sizes
-    - Pictures box resize base on device sizes
-    - Text paragraph expands or collapse base on device sizes 
-    - Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
-    - Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
+- Pictures box resize base on device sizes
+- Text paragraph expands or collapse base on device sizes 
+- Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
+- Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
 
 I make the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes, I feel if the tile break into a column of 3 or 2, it is really difficult for the player to navigate around the icons and remember their previous position. When the game tile stacks into the column and create multiple rows, it forces the player to scroll around the page to click on different icons. After further testing, a column of 4 hit the right balance of readability on small screen size and provide the minimum amount of scrolling.
 
 <img src=assets/images/screenshots/mobile-screenshot.png>
-[Responsive Tablet Layout](./assets/images/screenshots/tablet-screenshot.png)
+
+Responsive Tablet Layout [view](./assets/images/screenshots/tablet-screenshot.png)
+
+## Win Screen
+
+After the players successfully complete the game. A “You Win! screen will pop up to congratulate the player for clearing the game. If the player which to play the game again, they can click on “Replay” to play the game all over again. 
 
 <img src=assets/images/screenshots/winoverlay-desktop.png>
 
@@ -83,16 +101,6 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 
 -   Imagery is important. The large, main image is designed to be striking and catch the user's attention. 
 -   The pictures showcase chef ability and skills.
-
-## Main Landing Page Layout
--   Memory game.
--   How to play the game.
--   The World Alzheimer's Day information.
-
-## Wireframes
-
--   Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
--   Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
 ## Features
 -   Responsive on all device sizes
