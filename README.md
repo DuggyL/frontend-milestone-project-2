@@ -5,51 +5,47 @@
 View live project here. [view](https://duggyl.github.io/frontend-milestone-project-2/)
 
 # Design Briefs
-
 This frontend project is designed to raise Alzheimer's awareness in an interactive, easily digestible reading layout with a simple memory base game to keep visitors engage and emphasise the importance of brain exercises to improve short term memory. The website will not be comprehensive but present bitesize information to help visitors understand Alzheimer's. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for the potential visitors.
 
 ## Purpose & Goals
-
-- Alzheimer awareness (Types of dementia, symptoms & diagnosis and treatments)
-- Preventive measure (Reduce the risk of Alzheimers and other dementias)
-- Memory base game (Match pairs game)
-- Link to UK base Alzheimer's Society website (Offer more comprehensive information regarding Alzheimer and donation)
-- Using Google Map API to inform visitors of nearby clinics & specialists in the area (Undecided on the feature as dementia diagnosis can go through local GP and NHS)
+- Fun memoery base game (match pairs game) for visitor to play.
+- Raise awareness of Alzheimer's.
+- Provide bitsize information to visitor (Types of dementia, diagnosis and treatments).
+- Encourage visitor to participate in "World Alzheimer's Awareness Month".
 
 ##  Future Features
-
 In the future, I would like to add the following features:-
-
 - Option to play other memory-based games
-- Undecided on scorekeeping feature
-- The ability for visitors to sign up for newsletter
+- Leaderboard feature
+- Subscribe to newsletter
 - Direct donation feature (To Alzheimer's charities)
-
+- Google Map API (help locate nearby specialists and clinics)
 
 ## User Experience (UX)
-
 -   ### First Time Visitor Goals
-
-    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about Alzheimer’s.
-    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-    - As a First Time Visitor, I want to play fun & engaging memory game. I want the game to be easy to navigate UI and maybe play a few more rounds.
-    - As a First Time Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
+    - As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
+    - As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
+    - I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
+    - As a First Time Visitor, I want to be able to easily navigate throughout the site.
+    - As a First Time Visitor, I want to find more information about Alzheimer.
 
 -   ### Returning and Frequent Visitor Goals
-
-    - As a Returning Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
+    - Play memory game again.
+    - As a Returning Visitor, I want to find the best way to find more information about Alzheimer, research and charities.
 
 # Design
-
-- Easy to navigate single-page website. Using buttons to interact with the webpage.
+- Fun, inviting webpage design
+- Easy to navigate single-page website. Using single mouse click and button to interact with the webpage.
 
 ## Colour
- -   The two main primary colours used are pink dark pink 
- -   Supported by 
+The reason I chosen these 2 combinations colour for my project is that it synergise very well with the brain mascot(logo/icon).
 
-<h2 align="center"><img src=assets/images/colour.jpg></h2>
+- The two main primary colours used are Pale Violet Red (Pink) and Medium Slate Blue (Violet Purple).
+- Supported by black text to increase readability on white background.
 
-According to the psychology of colour, green represent balance and harmony and a darker shade of green symbolise ambition and wealth.  A gradient of both colours creates the perfect representation of the business brand. The orange colour creates a great contrast with the green background, increasing the readability and image of the chef working in the hot kitchen.
+<img src=assets/images/colour.jpg>
+
+According to the psychology of colour, pink is a sign of hope. It is a positive colour that inspires warm and comforting feelings. Pink calms and soothes our emotional energies, relieving feelings of anger, aggression, resentment, abandonment and neglect. And the color purple means wisdom, bravery, and spirituality. 
 
 ## Typography
 -   Pacifico
