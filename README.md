@@ -34,14 +34,31 @@ In the future, I would like to add the following features:-
     - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
 
 # Design
+- The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
+
+- The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. The icons shrink slightly in response to interaction, creating small feedback and satisfaction when interacting with it.
+
+- Within the <b>“Let’s Play Memory Game”</b> box, if visitors wish to learn more about Alzheimer's, they can click on the link provided, and it will send visitors directly to the “About Alzheimer’s” content below. The link changed colour to purple when hovering above “click here”. A small interaction to entice visitors to click on the link.
+
 <img src=assets/images/screenshots/desktop-screenshot.png>
-- Fun, inviting webpage design
-- Easy to navigate single-page website. Using single mouse click and button to interact with the webpage.
+
+- About Alzheimer’s pieces of information is a brief and quick summary of the disease. All the text information provided by [Alzheimer's Society](https://www.alzheimers.org.uk/get-involved/world-alzheimers-month/).
+
+- I did not add Alzheimer's Society website link and their contact details as I don’t have an affiliation with Alzheimer's Society Charity. This project was inspired by their works in research, cure, care and prevention of dementia. Hopefully, this project help raise awareness and encourage visitors to seek more information about Alzheimer’s and dementia. 
+
 <img src=assets/images/screenshots/desktop-screenshot1.png>
 
-Responsive Tablet Layout [view](./assets/images/screenshots/tablet-screenshot.png)
+## Responsive Design
+- Responsive on all device sizes
+    - Pictures box resize base on device sizes
+    - Text paragraph expands or collapse base on device sizes 
+    - Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
+    - Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
 
-Responsive Mobile Layout [view](./assets/images/screenshots/mobile-screenshot.png)
+I make the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes, I feel if the tile break into a column of 3 or 2, it is really difficult for the player to navigate around the icons and remember their previous position. When the game tile stacks into the column and create multiple rows, it forces the player to scroll around the page to click on different icons. After further testing, a column of 4 hit the right balance of readability on small screen size and provide the minimum amount of scrolling.
+
+<img src=assets/images/screenshots/mobile-screenshot.png>
+[Responsive Tablet Layout](./assets/images/screenshots/tablet-screenshot.png)
 
 <img src=assets/images/screenshots/winoverlay-desktop.png>
 
