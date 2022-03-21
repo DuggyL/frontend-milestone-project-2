@@ -66,6 +66,8 @@ This project was inspired by their works in research, cure, care and prevention 
 -   Text paragraph expands or collapse base on device sizes.
 -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
 -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
+-   Icons shrink slightly and return to original size in response to player interaction with it.
+-   The replay buttons are interactive when you hover above it. 
 
 I made the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes,
 if the tile breaks into a column of 3 or 2, creating multiple rows, it forces the player to scroll around the page to click on different icons.
