@@ -8,18 +8,19 @@ View live project [here](https://duggyl.github.io/frontend-milestone-project-2/)
 This frontend project is designed to raise Alzheimer's awareness in an interactive, easily digestible reading layout with a simple memory base game to keep visitors engage and emphasise the importance of brain exercises to improve short term memory. The website will not be comprehensive but present bitesize information to help visitors understand Alzheimer's. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for the potential visitors.
 
 ## Purpose & Goals
-- Fun memory base game (match pairs game) for visitor to play.
-- Raise awareness of Alzheimer's.
-- Provide bitsize information to visitor (Types of dementia, diagnosis and treatments).
-- Encourage visitor to participate in "World Alzheimer's Awareness Month".
+-   Fun memory base game (match pairs game) for visitor to play.
+-   Raise awareness of Alzheimer's.
+-   Provide bitsize information to visitor (Types of dementia, diagnosis and treatments).
+-   Encourage visitor to participate in "World Alzheimer's Awareness Month".
 
 ##  Future Features
 In the future, I would like to add the following features:-
-- Option to play other memory-based games
-- Leaderboard feature
-- Subscribe to newsletter
-- Direct donation feature (To Alzheimer's charities)
-- Google Map API (help locate nearby specialists and clinics)
+
+-   Option to play other memory-based games
+-   Leaderboard feature
+-   Subscribe to newsletter
+-   Direct donation feature (To Alzheimer's charities)
+-   Google Map API (help locate nearby specialists and clinics)
 
 ## User Experience (UX)
 -   ### First Time Visitor Goals
@@ -42,54 +43,56 @@ In the future, I would like to add the following features:-
 
 ## Wireframes
 
--   Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
--   Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
+Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
+
+Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
 ## Final Design
-
-- The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
-
-- The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. The icons shrink slightly in response to interaction, creating small feedback and satisfaction when interacting with it.
-
-- Within the <b>“Let’s Play Memory Game”</b> box, if visitors wish to learn more about Alzheimer's, they can click on the link provided, and it will send visitors directly to the “About Alzheimer’s” content below. The link changed colour to purple when hovering above “click here”. A small interaction to entice visitors to click on the link.
+-   The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. 
+    The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
+-   The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. 
+    The icons shrink slightly in response to interaction, creating small feedback and satisfaction when interacting with it.
+-   Within the <b>“Let’s Play Memory Game”</b> box, if visitors wish to learn more about Alzheimer's, they can click on the link provided, and it will send visitors directly to the “About Alzheimer’s” content below. 
+    The link changed colour to purple when hovering above “click here”. A small interaction to entice visitors to click on the link.
 
 <img src=assets/images/screenshots/desktop-screenshot.png>
 
-- About Alzheimer’s pieces of information is a brief and quick summary of the disease. All the text information provided by [Alzheimer's Society](https://www.alzheimers.org.uk/get-involved/world-alzheimers-month/).
-
-- I did not add Alzheimer's Society website link and their contact details as I don’t have an affiliation with Alzheimer's Society Charity. This project was inspired by their works in research, cure, care and prevention of dementia. Hopefully, this project help raise awareness and encourage visitors to seek more information about Alzheimer’s and dementia. 
+-   About Alzheimer’s pieces of information is a brief and quick summary of the disease. All the text information provided by [Alzheimer's Society](https://www.alzheimers.org.uk/get-involved/world-alzheimers-month/).
+-   I did not add Alzheimer's Society website link and their contact details as I don’t have an affiliation with Alzheimer's Society Charity.
+     This project was inspired by their works in research, cure, care and prevention of dementia. Hopefully, this project help raise awareness and encourage visitors to seek more information about Alzheimer’s and dementia. 
 
 <img src=assets/images/screenshots/desktop-screenshot1.png>
 
-## Responsive Design
-- Responsive on all device sizes
-- Pictures box resize base on device sizes
-- Text paragraph expands or collapse base on device sizes 
-- Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
-- Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
+## Responsive Design and Features
+-   Responsive on all device sizes
+-   Pictures box resize base on device sizes
+-   Text paragraph expands or collapse base on device sizes 
+-   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
+-   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
 
-I make the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes, I feel if the tile break into a column of 3 or 2, it is really difficult for the player to navigate around the icons and remember their previous position. When the game tile stacks into the column and create multiple rows, it forces the player to scroll around the page to click on different icons. After further testing, a column of 4 hit the right balance of readability on small screen size and provide the minimum amount of scrolling.
+I make the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes, 
+I feel if the tile break into a column of 3 or 2, it is really difficult for the player to navigate around the icons and remember their previous position. 
+When the game tile stacks into the column and create multiple rows, it forces the player to scroll around the page to click on different icons. 
+After further testing, a column of 4 hit the right balance of readability on small screen size and provide the minimum amount of scrolling.
 
 <img src=assets/images/screenshots/mobile-screenshot.png>
 
 Responsive Tablet Layout [view](./assets/images/screenshots/tablet-screenshot.png)
 
 ## Win Screen
+<img src=assets/images/screenshots/winoverlay-desktop.png>
 
 After the players successfully complete the game. A “You Win! screen will pop up to congratulate the player for clearing the game. If the player which to play the game again, they can click on “Replay” to play the game all over again. 
-
-<img src=assets/images/screenshots/winoverlay-desktop.png>
 
 Mobile Win Overlay [view](./assets/images/screenshots/winoverlay-mobile.png)
 
 ## Colour
-The reason I chosen these 2 combinations colour for my project is that it synergise very well with the brain mascot(logo/icon).
-- The two main primary colours used are Pale Violet Red (Pink) and Medium Slate Blue (Violet Purple).
-- Black text for readability on white background.
+<img src=assets/images/screenshots/colour.png>
 
-<img src=assets/images/colour.jpg>
+-   The two main primary colours used are Pale Violet Red (Pink) and Medium Slate Blue (Violet Purple).
+-   Black text for readability on white background.
 
-According to the psychology of colour, pink is a sign of hope. It is a positive colour that inspires warm and comforting feelings. Pink calms and soothes our emotional energies, relieving feelings of anger, aggression, resentment, abandonment and neglect. And the color purple means wisdom, bravery, and spirituality. 
+The reason I chosen these 2 combinations colour for my project is that it synergise very well with the brain mascot(logo/icon). According to the psychology of colour, pink is a sign of hope. It is a positive colour that inspires warm and comforting feelings. Pink calms and soothes our emotional energies, relieving feelings of anger, aggression, resentment, abandonment and neglect. And the color purple means wisdom, bravery, and spirituality. 
 
 ## Typography
 <img src=assets/images/screenshots/fredoka-font.png>
@@ -101,20 +104,6 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 
 -   Imagery is important. The large, main image is designed to be striking and catch the user's attention. 
 -   The pictures showcase chef ability and skills.
-
-## Features
--   Responsive on all device sizes
-    -   Pictures box resize base on device sizes
-    -   Image appear or disappear base on device sizes. About me section, Chef Dicson profile picture disappear on small screen sizes allow more room for text paragraph.
-    -   Text paragraph expands or collapse base on device sizes - the **READ MORE** button added to allow the visitor to expand text on small devices. on large screen devices, text paragraphs display in full and the button is hidden.
-    -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
-    -   Navigation bar collapses into hamburger icon to declutter header.  
-    -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity. 
--   On navigation bar, text will change colour if you hover above it. 
--   Navigation bar fixed on top of the viewing devices. Navigation options are always available for the visitor.
--   Direct social media links at the footer, allow visitors access to Chef Dicson social media pages easily. Click on the link will open a new tab, allowing the landing page remains open in another tab. 
--   Contact Chef Dicson directly using Contact Us form. 
-
 
 # Technologies Used
 
@@ -179,16 +168,16 @@ Develop Tools used to maintenance the web page.
 
 ### Mobile / Tablet Devices:
 The website was tested for responsiveness using Google/Firefox Chrome Developer Tools.
-- Galaxy S10
-- Galaxy S20
-- Galaxy Note
-- iPhone X Pro/Max
-- iPhone 11 Pro/Max
-- iPhone 12 Mini/Pro/Max
-- iPhone 13 Mini/Pro/Max
-- iPad
-- iPad Pro
-- Kindle
+-   Galaxy S10
+-   Galaxy S20
+-   Galaxy Note
+-   iPhone X Pro/Max
+-   iPhone 11 Pro/Max
+-   iPhone 12 Mini/Pro/Max
+-   iPhone 13 Mini/Pro/Max
+-   iPad
+-   iPad Pro
+-   Kindle
 
 ### Known Bugs
 
@@ -226,16 +215,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Code
 
-- This memory game based on multiple javascript tutorials. I studied tutorials extensively and breakdown all the components it needs to build a funtional javascript memory game.
-    - Create a memory game with JavaScript by Fakorede Damilola (https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
-    - Memory Game in Vanilla JavaScript by Marina Ferreira (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
-    - Learn JavaScript by Building 7 Games - Full Course by Ania Kubów (https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
--   How to Overlay by w3school (https://www.w3schools.com/howto/howto_css_overlay.asp)
+-   This memory game based on multiple javascript tutorials. I studied tutorials extensively and breakdown all the components it needs to build a funtional javascript memory game.
+    -   Create a memory game with JavaScript by Fakorede Damilola [link](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
+    -   Memory Game in Vanilla JavaScript by Marina Ferreira [link](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+    -   Learn JavaScript by Building 7 Games - Full Course by Ania Kubów [link](https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
+-   How to Overlay by w3school [link](https://www.w3schools.com/howto/howto_css_overlay.asp)
 -   Bootstrap Library used throughout the project mainly to make site responsive
 -   Nav bar, social media and work history codes inspired by Code Institute tutorials projects
--   W3schools and MDN Webdocs helped me learn more about HTML/CSS and solves problems
--   Stack Overflow helped with solution to webpage responsiveness 
-
 
 ### Media
 -   All images on private chef and about me sections were provided by Chef Dicson
@@ -247,3 +233,4 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 ### Acknowledgements
 -   My Mentor [Narender Singh](https://github.com/nar3nd3r) for helpful feedback regarding design, features and functionality. 
 -   Stack Overflow developers on questions forum who provided helpful tips and solutions.
+-   W3schools and MDN Webdocs helped me learn more about HTML/CSS/JS.
