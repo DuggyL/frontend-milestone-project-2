@@ -45,7 +45,7 @@ After meeting with mentor [Narender Singh](https://github.com/nar3nd3r), a few c
 
 # Design
 -   The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. 
-    The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
+    The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scrolling in mind. The visitor can interact with everything on the page with a single click. 
 -   The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. 
     The icons shrink slightly in response to interaction, creating small feedback and satisfaction when interacting with it.
 -   Within the <b>“Let’s Play Memory Game”</b> box, if visitors wish to learn more about Alzheimer's, they can click on the link provided, and it will send visitors directly to the “About Alzheimer’s” content below. 
@@ -67,10 +67,10 @@ This project was inspired by their works in research, cure, care and prevention 
 -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
 -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
 
-I make the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes, 
-I feel if the tile break into a column of 3 or 2, it is really difficult for the player to navigate around the icons and remember their previous position. 
-When the game tile stacks into the column and create multiple rows, it forces the player to scroll around the page to click on different icons. 
-After further testing, a column of 4 hit the right balance of readability on small screen size and provide the minimum amount of scrolling.
+I made the decision to maintain the memory game grid to the column of 4 on all device sizes. After multiple testing on various small screen sizes,
+if the tile breaks into a column of 3 or 2, creating multiple rows, it forces the player to scroll around the page to click on different icons.
+It is really difficult for the player to navigate around and remember icons previously clicked on due to viewing position shifting.
+After further testing, a column of 4 hit the right balance of readability on small screen size and provided the minimum amount of scrolling.
 
 <img src=assets/images/screenshots/mobile-screenshot.png>
 
@@ -79,7 +79,7 @@ Responsive Tablet Layout [view](./assets/images/screenshots/tablet-screenshot.pn
 ## Win Screen
 <img src=assets/images/screenshots/winoverlay-desktop.png>
 
-After the players successfully complete the game. A “You Win! screen will pop up to congratulate the player for clearing the game. If the player which to play the game again, they can click on “Replay” to play the game all over again. 
+After the players successfully complete the game. A “You Win! screen will pop up to congratulate the player for clearing the game. If the player wishes to play the game again, they can click on “Replay” to play the game all over again. 
 
 Mobile Win Overlay [view](./assets/images/screenshots/winoverlay-mobile.png)
 
@@ -100,7 +100,7 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 <img src=assets/images/screenshots/icons.png>
 
 -   The brain mascot sets a fun whimsical tone and grabs visitor's attention. 
--   The happy cheering brain mascot uses on the win overlay screen to reflect the   player's success.
+-   The happy cheering brain mascot uses on the win overlay screen to reflect the player's success.
 -   I have chosen these everyday household images to create familiarity with things people use every day. Icons are easily recognised and differentiated. The icon's art style compliment the brain mascot.
 
 ##  Future Features
@@ -138,33 +138,39 @@ Balsamiq was used to create the wireframes during the design process.
 Develop Tools used to maintenance the web page.
 
 # Testing
+The Lighthouse, W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](assets/images/html-validator.png) 
+-   [W3C CSS Validator](assets/images/css-validator.png) 
+-   [Lighthouse Report](assets/images/lighthouse-report.png)
+
+CSS Validator flagged minor warnings but the webpage is operational. 
+
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
-    -  As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about Alzheimer’s.
-
+    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
         - Upon entering the site, users are automatically greeted by the main image, which immediately draws Visitors eyes to the page
-        - Easily readable navigation bar
+        - Easily readable navigation bar allow Visitor to navigate up and down the page with ease. 
         - Each section has been layout carefully to increase readability, easy for the eyes to follow.
 
-    -  As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-
+    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
         - The site has been designed to be fluid to read. At the top of each page there is a fixed navigation bar, each link describes what section they will end up at clearly.
+        - At the footer of the page, Chef Dicson logo allows the user to transfer back to the top of the page.
+        - On the Contact Us footer, after a form response is submitted. It will not interfere with the Visitor page.
 
-    -  As a First Time Visitor, I want to play fun & engaging memory game. I want the game to be easy to navigate UI and maybe play a few more rounds.
+    -  As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to determine how trusted and known he is.
+        - Once the new visitor has read the testimonials. It will give them the confidence to hire Chef Dicson.
+        - The user can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
 
-        - 
-        
+    -  As a First Time Visitor, I want to find information about private chef services
+        - The user can also scroll to the middle of the page below about me, or click on "Private Chef" at the navigation bar to send Visitor directly to the Private Chef section of the page. The visitor will greet by a carousel of delicious dishes, details explain the benefits of hiring a private chef and what to expect when you hire one.
 
-    -  As a First Time Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
-
-        -
-        
 -   #### Returning and Frequent Visitor Goals
-    -  As a Returning Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
-
-        - 
+    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
+        - The Visitor can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
+        - The Visitor call use Contact Me form to directly contact Chef Dicson.
 
 ### Further Testing
 -   The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
