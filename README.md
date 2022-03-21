@@ -8,7 +8,7 @@ View live project here. [view](https://duggyl.github.io/frontend-milestone-proje
 This frontend project is designed to raise Alzheimer's awareness in an interactive, easily digestible reading layout with a simple memory base game to keep visitors engage and emphasise the importance of brain exercises to improve short term memory. The website will not be comprehensive but present bitesize information to help visitors understand Alzheimer's. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for the potential visitors.
 
 ## Purpose & Goals
-- Fun memoery base game (match pairs game) for visitor to play.
+- Fun memory base game (match pairs game) for visitor to play.
 - Raise awareness of Alzheimer's.
 - Provide bitsize information to visitor (Types of dementia, diagnosis and treatments).
 - Encourage visitor to participate in "World Alzheimer's Awareness Month".
@@ -25,48 +25,44 @@ In the future, I would like to add the following features:-
 -   ### First Time Visitor Goals
     - As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
     - As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
-    - I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
+    - As a First Time Visitor, I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
     - As a First Time Visitor, I want to be able to easily navigate throughout the site.
     - As a First Time Visitor, I want to find more information about Alzheimer.
 
 -   ### Returning and Frequent Visitor Goals
-    - Play memory game again.
-    - As a Returning Visitor, I want to find the best way to find more information about Alzheimer, research and charities.
+    - As a Returning Visitor, I want to play memory game again.
+    - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
 
 # Design
+
+<img src=assets/images/colour.jpg>
 - Fun, inviting webpage design
 - Easy to navigate single-page website. Using single mouse click and button to interact with the webpage.
 
 ## Colour
 The reason I chosen these 2 combinations colour for my project is that it synergise very well with the brain mascot(logo/icon).
-
 - The two main primary colours used are Pale Violet Red (Pink) and Medium Slate Blue (Violet Purple).
-- Supported by black text to increase readability on white background.
+- Black text for readability on white background.
 
 <img src=assets/images/colour.jpg>
 
 According to the psychology of colour, pink is a sign of hope. It is a positive colour that inspires warm and comforting feelings. Pink calms and soothes our emotional energies, relieving feelings of anger, aggression, resentment, abandonment and neglect. And the color purple means wisdom, bravery, and spirituality. 
 
 ## Typography
--   Pacifico
+<img src=assets/images/screenshots/fredoka-font.png>
 
-Pacifico will be used exclusively on the Chef Dicson logo. The reason I chose Pacifico is the simplicity and fluidity of the script typeface. It conveys the feelings of being fun, easy-going, and hassle-free. 
-
--   Quicksand (Included all font weight)
-    
-And it accompanies by Quicksand font, a round sans-serif typeface that conveys a sense of friendliness and reliability. It also has great readability. 
+I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the project. Using different font weights to convey emphasis and importance on some of the content. The reason I chosen to Fredoka family on this project, it because the font conveys a sense of fun, friendliness and is easy on the eyes. The big, round and bold typeface are clear and has great letter-spacing leading to ease of communication.
 
 ## Imagery
+<img src=assets/images/screenshots/icons.png>
+
 -   Imagery is important. The large, main image is designed to be striking and catch the user's attention. 
 -   The pictures showcase chef ability and skills.
 
 ## Main Landing Page Layout
--   Header - Logo and navigation bar accompanied by main eye catching images.
--   Main content - CV, career timeline, 
--   Private chef services
--   Carousel of culinary invention
--   Testimonials
--   Footer - Contact details, social media links, contact form
+-   Memory game.
+-   How to play the game.
+-   The World Alzheimer's Day information.
 
 ## Wireframes
 
@@ -100,9 +96,7 @@ And it accompanies by Quicksand font, a round sans-serif typeface that conveys a
 1. [Bootstrap v5.1.3:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
  Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
-Google fonts were used to import the Pacifico and Quicksand font family into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/) 
-Font Awesome was used on all pages throughout the website to add icons for aesthetic purposes.
+Google fonts were used to import the Fredoka font family.
 1. [Gitpod:](https://gitpod.io/)
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
