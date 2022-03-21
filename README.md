@@ -34,7 +34,7 @@ At the early conception stage of the project, the idea was to have a 4x4 grid of
 
 -   1st draft of Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
 -   1st draft of Popup Wireframe [view](./assets/images/memory-game-wireframe/popup-wireframe.png)
--   1st draft of Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
+-   1st draft of Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
 But as the project progress, I feel the webpage need to teach visitors how to play the game and offer visitors the option to explore Alzheimer's related content and not bombard the visitor with too much information after they win the game. 
 
