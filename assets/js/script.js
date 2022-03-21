@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // flipIcon function is used to swap default icon(brain) image with iconsArray's images. Using "this" keyword to get data-id of the icons that have been clicked on and store inside the iconId variable.
     // Using "push" method to push iconsArray's "name" to iconsChosen array.
     // And set new attribute to the default icon(brain) player clicked on and assign source to iconsArray's images using iconId.
-    // If iconsChosen array have 2 set of data (name i.e ["teapot", "kettle"]) it will set a timer (700 millisecond) using setTimeout method to activate checkMatch function.
+    // If iconsChosen array have 2 set of data (name i.e ["teapot", "kettle"]) it will set a timer (250 millisecond) using setTimeout method to activate checkMatch function.
 
     function flipIcon() {
         let iconId = this.getAttribute('data-id');
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Within the function it will increment iconsMatch and click variables number by 1 based on player interaction with the game. And display the number to "Score" and "Attempt" on the game page using innerHTML.
     // If the 1st value of the iconsChosen array is the same to (strict equality) 2nd value of iconsChosen array it will alert the player "You found a match." and add to the number of iconsMatch variables. 
     // Each time the icons are a match will activate the checkWon function.
-    // If the icons are not a match (else), the icons will go back to the default icon(brain) and alert the player "Try again".
-    // After the if/else statement, iconsChosen and iconsChosenId arrays will clear. Number of clicks will be added to the clicks variable and displayed on "Attempt" on the game page.
+    // If the icons are not a match (else), the icons will go back to the default icon(brain).
+    // After the if/else statement, iconsChosen and iconsChosenId arrays will clear. Number of clicks will be added to the clicks variable and displayed on "Attempt" on the game grid page.
 
     function checkMatch() {
         const icons = document.querySelectorAll('img');
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // replay function will activate both shuffleIcons and createGame functions.
     // Previous game grid will be clear to stop the createGame function from creating a new game on top of the old one.
-    // iconsMatch and click replay back to 0. "Score" and "Attempt" also replay back to 0 on the main game page.
+    // iconsMatch and attempt back to 0. "Score" and "Attempt" also return back to 0 on the main game grid page.
 
     function replay() {
         gameGrid.innerHTML = "";

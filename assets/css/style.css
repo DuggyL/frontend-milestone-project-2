@@ -14,13 +14,15 @@ h1 {
     font-family: Fredoka;
     font-weight: 900;
     text-align: left;
-    font-size: 4em;
+    font-size: calc(1.9em + 3.6vmin);
     text-transform: uppercase;
+    display: flex;
     line-height: 0.9;
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 0px 10px 0px 10px;
 }
+
 
 h3 {
     color: palevioletred;
