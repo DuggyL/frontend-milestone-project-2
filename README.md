@@ -1,4 +1,4 @@
-<h1>Interactive Frontend Milestone Project 2 - Alzheimer Awareness Website</h1>
+<h1>Interactive Frontend Milestone Project 2 - Alzheimer's Awareness Website</h1>
 
 <img src=assets/images/screenshots/responsive-page.png>
 
@@ -28,7 +28,7 @@ In the future, I would like to add the following features:-
     - As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
     - As a First Time Visitor, I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
     - As a First Time Visitor, I want to be able to easily navigate throughout the site.
-    - As a First Time Visitor, I want to find more information about Alzheimer.
+    - As a First Time Visitor, I want to find more information about Alzheimer's.
 
 -   ### Returning and Frequent Visitor Goals
     - As a Returning Visitor, I want to play memory game again.
@@ -42,10 +42,17 @@ In the future, I would like to add the following features:-
 -   The World Alzheimer's Day information.
 
 ## Wireframes
+At the early conception stage of the project, the idea was to have a 4x4 grid of the memory game and Alzehimer related information pop up after the player clears the game.
 
-Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
+-   1st draft of Homepage Wireframe [view](./assets/images/memory-game-wireframe/desktop-wireframe.png)
+-   1st draft of Popup Wireframe [view](./assets/images/memory-game-wireframe/popup-wireframe.png)
+-   1st draft of Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
 
-Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.png)
+But as the project progress, I feel the webpage need to teach visitors how to play the game and offer visitors the option to explore Alzheimer's related content and not bombard the visitor with too much information after they win the game. 
+
+<img src=assets/images/screenshots/new-wireframe.png>
+
+After meeting with mentor [Narender Singh](https://github.com/nar3nd3r), a few changes were made to declutter the landing page, increase emphasis on the memory game and group Alzheimer related information in one place. Simplify the win screen to congratulate the players and encourage replay. The difficulty option feature was scrapped in favour for increase icons and one difficulty. 
 
 ## Final Design
 -   The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. 
@@ -58,8 +65,9 @@ Mobile Wireframe [view](./assets/images/memory-game-wireframe/mobile-wireframe.p
 <img src=assets/images/screenshots/desktop-screenshot.png>
 
 -   About Alzheimer’s pieces of information is a brief and quick summary of the disease. All the text information provided by [Alzheimer's Society](https://www.alzheimers.org.uk/get-involved/world-alzheimers-month/).
--   I did not add Alzheimer's Society website link and their contact details as I don’t have an affiliation with Alzheimer's Society Charity.
-     This project was inspired by their works in research, cure, care and prevention of dementia. Hopefully, this project help raise awareness and encourage visitors to seek more information about Alzheimer’s and dementia. 
+
+I did not add Alzheimer's Society website link and their contact details as I don’t have an affiliation with Alzheimer's Society Charity.
+This project was inspired by their works in research, cure, care and prevention of dementia. Hopefully, this project help raise awareness and encourage visitors to seek more information about Alzheimer’s and dementia. 
 
 <img src=assets/images/screenshots/desktop-screenshot1.png>
 
@@ -102,8 +110,10 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 ## Imagery
 <img src=assets/images/screenshots/icons.png>
 
--   Imagery is important. The large, main image is designed to be striking and catch the user's attention. 
--   The pictures showcase chef ability and skills.
+-   The brain mascot sets a fun whimsical tone and grabs visitor's attention. 
+-   The happy cheering brain mascot uses on the win overlay screen to reflect the   player's success.
+-   I have chosen these everyday household images to create familiarity with things people use every day. Icons are easily recognised and differentiated. The icon's art style compliment the brain mascot.
+
 
 # Technologies Used
 
@@ -114,7 +124,6 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 -   Javascript
 
 ### Frameworks, Libraries & Programs Used
-
 1. [Bootstrap v5.1.3:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
  Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
@@ -135,7 +144,6 @@ Develop Tools used to maintenance the web page.
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
-
     -  As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about Alzheimer’s.
 
         - Upon entering the site, users are automatically greeted by the main image, which immediately draws Visitors eyes to the page
@@ -156,7 +164,6 @@ Develop Tools used to maintenance the web page.
         -
         
 -   #### Returning and Frequent Visitor Goals
-
     -  As a Returning Visitor, I want to find the best way to find more Alzheimer base information, research and charities.
 
         - 
@@ -184,7 +191,6 @@ The website was tested for responsiveness using Google/Firefox Chrome Developer 
 # Deployment
 
 ### GitHub Pages
-
 The project was deployed to GitHub Pages using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
@@ -196,14 +202,13 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:-
 
 1. Log in to GitHub and locate the GitHub Repository.
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
-
 1. Log in to GitHub and locate the GitHub Repository.
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
@@ -214,21 +219,19 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 # Credits
 
 ### Code
-
 -   This memory game based on multiple javascript tutorials. I studied tutorials extensively and breakdown all the components it needs to build a funtional javascript memory game.
-    -   Create a memory game with JavaScript by Fakorede Damilola [link](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
-    -   Memory Game in Vanilla JavaScript by Marina Ferreira [link](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
-    -   Learn JavaScript by Building 7 Games - Full Course by Ania Kubów [link](https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
--   How to Overlay by w3school [link](https://www.w3schools.com/howto/howto_css_overlay.asp)
--   Bootstrap Library used throughout the project mainly to make site responsive
--   Nav bar, social media and work history codes inspired by Code Institute tutorials projects
+    -   Create a memory game with JavaScript by Fakorede Damilola. [link](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
+    -   Memory Game in Vanilla JavaScript by Marina Ferreira. [link](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+    -   Learn JavaScript by Building 7 Games - Full Course by Ania Kubów. [link](https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLDpvVzk1kZl_xWyRhgVk5o2QUIaW_WyQc&index=36&t=3140s)
+-   How to Overlay by w3school. [link](https://www.w3schools.com/howto/howto_css_overlay.asp)
+-   Bootstrap Library used throughout the project mainly to make site responsive.
 
 ### Media
--   All images on private chef and about me sections were provided by Chef Dicson
--   Main image and testimonal banner were found on unsplash.com
--   Pacifico and Quicksand fonts supplied by Google Fonts
--   Social media icons by Fontawesome
--   Images used in readme were screen shot from W3 Validators and Am I Responsive
+-   All icon images from freeject - Free 15 Home Living Stuff Illustration. [link](https://www.freeject.net/2022/03/free-15-home-living-stuff-illustration.html)
+-   Brain mascot from Vecteezy. [link](https://www.vecteezy.com/vector-art/1859771-world-mental-health-day-human-head-cartoon-brain)
+-   Footer banner from upsplash by Robina Weermeijer. [link](https://unsplash.com/photos/3KGF9R_0oHs)
+-   Fredoka font supplied by Google Fonts.
+-   Images used in readme were screen shot from W3 Validators and Am I Responsive.
 
 ### Acknowledgements
 -   My Mentor [Narender Singh](https://github.com/nar3nd3r) for helpful feedback regarding design, features and functionality. 
