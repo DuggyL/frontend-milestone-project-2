@@ -13,15 +13,6 @@ This frontend project is designed to raise Alzheimer's awareness in an interacti
 -   Provide bitsize information to visitor (Types of dementia, diagnosis and treatments).
 -   Encourage visitor to participate in "World Alzheimer's Awareness Month".
 
-##  Future Features
-In the future, I would like to add the following features:-
-
--   Option to play other memory-based games
--   Leaderboard feature
--   Subscribe to newsletter
--   Direct donation feature (To Alzheimer's charities)
--   Google Map API (help locate nearby specialists and clinics)
-
 ## User Experience (UX)
 -   ### First Time Visitor Goals
     - As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
@@ -33,8 +24,6 @@ In the future, I would like to add the following features:-
 -   ### Returning and Frequent Visitor Goals
     - As a Returning Visitor, I want to play memory game again.
     - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
-
-# Design
 
 ## Main Landing Page Layout
 -   Memory game.
@@ -54,7 +43,7 @@ But as the project progress, I feel the webpage need to teach visitors how to pl
 
 After meeting with mentor [Narender Singh](https://github.com/nar3nd3r), a few changes were made to declutter the landing page, increase emphasis on the memory game and group Alzheimer related information in one place. Simplify the win screen to congratulate the players and encourage replay. The difficulty option feature was scrapped in favour for increase icons and one difficulty. 
 
-## Final Design
+# Design
 -   The landing page is designed with ease of use for visitors in mind. The memory game is the first thing visitor see, next to how to play instructions. 
     The visitors can engage with the game without the need to navigate around the page, the page designed with a minimum scroll in mind. The visitor can interact with everything on the page with a single click. 
 -   The pink banner at the top and bottom is designed to help visitors focus on the game in the middle. The icons have small animation when you hold and click. 
@@ -72,9 +61,9 @@ This project was inspired by their works in research, cure, care and prevention 
 <img src=assets/images/screenshots/desktop-screenshot1.png>
 
 ## Responsive Design and Features
--   Responsive on all device sizes
--   Pictures box resize base on device sizes
--   Text paragraph expands or collapse base on device sizes 
+-   Responsive on all device sizes.
+-   Pictures box resize base on device sizes.
+-   Text paragraph expands or collapse base on device sizes.
 -   Text layout adjusts base on the screen sizes. Allow better readability on small screen sizes.
 -   Adaptive design page layout will reorder into columns based on screen sizes, allowing easy navigation and improving page clarity.
 
@@ -114,6 +103,15 @@ I used <b>Fredoka</b> throughout the webpage to maintain cohesion across the pro
 -   The happy cheering brain mascot uses on the win overlay screen to reflect the   player's success.
 -   I have chosen these everyday household images to create familiarity with things people use every day. Icons are easily recognised and differentiated. The icon's art style compliment the brain mascot.
 
+##  Future Features
+In the future, I would like to add the following features:-
+
+-   Option to pick different difficulties.
+-   Option to play other memory-based games.
+-   Leaderboard feature.
+-   Subscribe to newsletter.
+-   Direct donation feature (To Alzheimer's charities).
+-   Google Map API (help locate nearby specialists and clinics).
 
 # Technologies Used
 
