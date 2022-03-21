@@ -15,15 +15,14 @@ This frontend project is designed to raise Alzheimer's awareness in an interacti
 
 ## User Experience (UX)
 -   ### First Time Visitor Goals
-    - As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
-    - As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
-    - As a First Time Visitor, I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
-    - As a First Time Visitor, I want to be able to easily navigate throughout the site.
-    - As a First Time Visitor, I want to find more information about Alzheimer's.
+    -   As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
+    -   As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
+    -   As a First Time Visitor, I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
+    -   As a First Time Visitor, I want to be able to easily navigate throughout the site.
+    -   As a First Time Visitor, I want to find more information about Alzheimer's.
 
 -   ### Returning and Frequent Visitor Goals
-    - As a Returning Visitor, I want to play memory game again.
-    - As a Returning Visitor, I want to find the best way to find more information about Alzheimer's, research and charities.
+    -   As a Returning Visitor, I want to play memory game again.
 
 ## Main Landing Page Layout
 -   Memory game.
@@ -140,44 +139,60 @@ Balsamiq was used to create the wireframes during the design process.
 Develop Tools used to maintenance the web page.
 
 # Testing
-The Lighthouse, W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
+The JSHint Lighthouse, W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no errors in the project.
 
--   [W3C Markup Validator](assets/images/html-validator.png) 
--   [W3C CSS Validator](assets/images/css-validator.png) 
--   [Lighthouse Report](assets/images/lighthouse-report.png)
+-   JSHint Found 9 functions with same 19 warnings regarding browser extension. [link](assets/images/screenshots/jshint.png)
+-   HTML Validator found no errors or warnings. [link](assets/images/screenshots/html-validator.png) 
+-   CSS Validator flagged minor warnings from bootstrap but no error found. [link](assets/images/screenshots/css-validator.png) 
+-   [Lighthouse Report Desktop](assets/images/screenshots/lighthouse-desktop-report.png)
+-   [Lighthouse Report Mobile](assets/images/screenshots/lighthouse-mobile-report.png)
 
-CSS Validator flagged minor warnings but the webpage is operational. 
 
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
-    - As a First Time Visitor of the website, I want to easily understand the main purpose of the site and learn more about what types of services it offers.
-        - Upon entering the site, users are automatically greeted by the main image, which immediately draws Visitors eyes to the page
-        - Easily readable navigation bar allow Visitor to navigate up and down the page with ease. 
-        - Each section has been layout carefully to increase readability, easy for the eyes to follow.
+    - As a First Time Visitor, I want to easily understand the main purpose of the site. Play fun memory game and learn more about Alzheimer’s.
+        -   Upon entering the site, the visitor's eyes should immediately draw to the memory game and how to play the section located at the center of the landing page.
+        -   If the player wishes to learn more about Alzheimer's, they can click on the link provided which sends visitors directly to the section or scroll down to the bottom of the page.
 
-    - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        - The site has been designed to be fluid to read. At the top of each page there is a fixed navigation bar, each link describes what section they will end up at clearly.
-        - At the footer of the page, Chef Dicson logo allows the user to transfer back to the top of the page.
-        - On the Contact Us footer, after a form response is submitted. It will not interfere with the Visitor page.
+    - As a First Time Visitor, I want to know how to play the game and I want jump straight into the game. 
+        -   The visitors greet by memory game already loaded and ready to play. Instructions on how to play the game can be easily located right next to the game.
+        -   The pink banners located at top and bottom of the game should direct visitors to focus on the memory game in the center.
+        -   The visitors can interact with the game straight away without any interference or pointless interaction.
 
-    -  As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to determine how trusted and known he is.
-        - Once the new visitor has read the testimonials. It will give them the confidence to hire Chef Dicson.
-        - The user can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
+    -  As a First Time Visitor, I want to navigate around the game easily, UI are responsive and maybe play a few more rounds.
+        -   The size of the icons compliment the screen size of the visitors and spacing between each icons should prevent any miss-click.
+        -   The icons of the game feel responsive when click on and icons flip back to their original image without any delay. The experience should feel snappy.
+        -   For desktop users, the game feels satisfied and responsive thanks to subtle animation when icons are clicked.
+        -   The game should feel satisfied when played and feel accomplished when the players win. The win overlay screen acknowledges the player's accomplishment and encourages replay the game again.
 
-    -  As a First Time Visitor, I want to find information about private chef services
-        - The user can also scroll to the middle of the page below about me, or click on "Private Chef" at the navigation bar to send Visitor directly to the Private Chef section of the page. The visitor will greet by a carousel of delicious dishes, details explain the benefits of hiring a private chef and what to expect when you hire one.
+    -   As a First Time Visitor, I want to be able to easily navigate throughout the site.
+        -   The site can easily navigate with a single click on the landing page or scroll up and down.
+        -   All the sections divided into columns and rows depend on the screen sizes. Each section has a big standout header, to help visitors navigate.
+
+    -   As a First Time Visitor, I want to find more information about Alzheimer's.
+        -   A link provided at landing page to direct visitors to information about Alzheimer's below.
 
 -   #### Returning and Frequent Visitor Goals
-    - As a Returning Visitor, I want to find the best way to get in contact with Chef Dicson with any questions I may have.
-        - The Visitor can also scroll to the footer of the page to locate contact details, mobile and social media links or click on "Contact Me" at the navigation bar to send Visitor directly to the footer when contact details are kept.
-        - The Visitor call use Contact Me form to directly contact Chef Dicson.
+    -   As a Returning Visitor, I want to play memory game again.
+        - A REPLAY button located at the bottom of the game grid can be clicked to reset the game.
+        - A REPLAY button located in the middle of the win overlay popup. When clicked on the button, the visitor sends back to the landing page with all the icons shuffled and reset, ready to be played again.
 
 ### Further Testing
 -   The website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
 -   Testing was done to ensure that all pages were linking correctly.
--   Friends were asked to review the site and report any bugs or user experience issues.
+-   Friends were asked to play the game and report any bugs or user experience issues.
+
+### Known Bugs
+-   An early version of the game has this bug where if the user clicks on the icons too quickly, some of the icons don't flip back.
+    -   I begin to fixed the game UI and space out each icons to acceptable distance to prevent miss-clicking. By creating a small distance between each icons, 
+        I find it stop users from spamming click too quickly due to user have to move the mouse cursor to next icons they wishes to click.
+    -   I also decrease the response time of the javascript codes when flip icons and check match functions run. It makes the icons flip back faster than human click speed. 
+        I can't decrease the response time too much as the game feel less responsive and not satisfied when icons flip back too fast
+
+After the fixes, I believe the game feels more responsive. I tested the game multiples of the times and I feel 9/10 times the icons flip back as intended.
+But on rare occasions, 1st-3rd icons I clicked, the 1st icon doesn't flip back. The bug cannot be recreated consistently. I attempted a fews javascript code tweaks, but I still cannot find a solution to fix this problem.
 
 ### Mobile / Tablet Devices:
 The website was tested for responsiveness using Google/Firefox Chrome Developer Tools.
@@ -191,8 +206,6 @@ The website was tested for responsiveness using Google/Firefox Chrome Developer 
 -   iPad
 -   iPad Pro
 -   Kindle
-
-### Known Bugs
 
 # Deployment
 
